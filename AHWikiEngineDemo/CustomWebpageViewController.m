@@ -6,29 +6,33 @@
 //  Copyright (c) 2012 Avocado Hills. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "CustomWebpageViewController.h"
 #import <AHWikiEngine/AHWikiEngine.h>
-#import "CustomArticleController.h"
 
-@interface ViewController ()
+@interface CustomWebpageViewController ()
 
 @property (nonatomic, readwrite) AHWikiViewController *wikiViewController;
 
 @end
 
-@implementation ViewController
+@implementation CustomWebpageViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.view.backgroundColor = [UIColor redColor];
+    self.webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:self.webView];
+    self.webView.delegate = self;
     NSString *htmlPath = [[NSBundle mainBundle] pathForResource:@"demo" ofType:@"html"];
     NSString *html = [NSString stringWithContentsOfFile:htmlPath encoding:NSUTF8StringEncoding error:nil];
     [self.webView loadHTMLString:html baseURL:[NSBundle mainBundle].bundleURL];
     self.wikiViewController = [AHWikiViewController new];
-    self.wikiViewController.articleController = [CustomArticleController new];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(hide)];
+}
+
+- (void) hide {
+    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
