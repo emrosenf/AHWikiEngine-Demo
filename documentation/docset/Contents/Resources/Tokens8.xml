@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AHWebViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AHWebViewController</TokenIdentifier>
+			<Abstract type="html">UIViewController that wraps a UIWebView for displaying tables or other pages</Abstract>
+			<DeclaredIn>AHWebViewController.h</DeclaredIn>
+			
+			<NodeRef refid="8"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHWebViewController/initWithAddress:</TokenIdentifier>
+			<Abstract type="html">Initialize with URL</Abstract>
+			<DeclaredIn>AHWebViewController.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithAddress:(NSString *)urlString</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>urlString</Name>
+					<Abstract type="html">the URL as a NSString *</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The initialized AHWebViewController</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithAddress:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHWebViewController/initWithURL:</TokenIdentifier>
+			<Abstract type="html">Initialize with URL</Abstract>
+			<DeclaredIn>AHWebViewController.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithURL:(NSURL *)URL</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>URL</Name>
+					<Abstract type="html">The URL as an NSURL *</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The initialized AHWebViewController</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHWebViewController/loadHTMLString:baseURL:</TokenIdentifier>
+			<Abstract type="html">Load HTML string into UIWebView. Wraps
+      [webView loadHTMLString:html baseURL:baseURL];</Abstract>
+			<DeclaredIn>AHWebViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadHTMLString:(NSString *)html baseURL:(NSURL *)baseURL</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>html</Name>
+					<Abstract type="html">The HTML string to load</Abstract>
+				</Parameter><Parameter>
+					<Name>baseURL</Name>
+					<Abstract type="html">The baseURL to use</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/loadHTMLString:baseURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHWebViewController/setArticleController:</TokenIdentifier>
+			<Abstract type="html">Reference to the AHArticleController implementation</Abstract>
+			<DeclaredIn>AHWebViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, weak) id&lt;AHArticleController&gt; articleController</Declaration>
+			
+			
+			<Anchor>//api/name/articleController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AHWebViewController/articleController</TokenIdentifier>
+			<Abstract type="html">Reference to the AHArticleController implementation</Abstract>
+			<DeclaredIn>AHWebViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, weak) id&lt;AHArticleController&gt; articleController</Declaration>
+			
+			
+			<Anchor>//api/name/articleController</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

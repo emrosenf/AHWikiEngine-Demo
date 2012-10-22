@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AHArticleController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AHArticleController</TokenIdentifier>
+			<Abstract type="html">Base implementation of the AHArticleController protocol</Abstract>
+			<DeclaredIn>AHArticleController.h</DeclaredIn>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHArticleController/setWikiController:</TokenIdentifier>
+			<Abstract type="html">The implementation of AHWikiController</Abstract>
+			<DeclaredIn>AHArticleController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSObject&lt;AHWikiController&gt; *wikiController</Declaration>
+			
+			
+			<Anchor>//api/name/wikiController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AHArticleController/wikiController</TokenIdentifier>
+			<Abstract type="html">The implementation of AHWikiController</Abstract>
+			<DeclaredIn>AHArticleController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSObject&lt;AHWikiController&gt; *wikiController</Declaration>
+			
+			
+			<Anchor>//api/name/wikiController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHArticleController/setWebController:</TokenIdentifier>
+			<Abstract type="html">The implementation of AHWebController</Abstract>
+			<DeclaredIn>AHArticleController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSObject&lt;AHWebController&gt; *webController</Declaration>
+			
+			
+			<Anchor>//api/name/webController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AHArticleController/webController</TokenIdentifier>
+			<Abstract type="html">The implementation of AHWebController</Abstract>
+			<DeclaredIn>AHArticleController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSObject&lt;AHWebController&gt; *webController</Declaration>
+			
+			
+			<Anchor>//api/name/webController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHArticleController/setDelegate:</TokenIdentifier>
+			<Abstract type="html">A weak reference to the underlying view controller</Abstract>
+			<DeclaredIn>AHArticleController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, unsafe_unretained) id&lt;AHArticleViewController&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AHArticleController/delegate</TokenIdentifier>
+			<Abstract type="html">A weak reference to the underlying view controller</Abstract>
+			<DeclaredIn>AHArticleController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, unsafe_unretained) id&lt;AHArticleViewController&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHArticleController/setSHistory:</TokenIdentifier>
+			<Abstract type="html">An array that holds the session history</Abstract>
+			<DeclaredIn>AHArticleController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSMutableArray *sHistory</Declaration>
+			
+			
+			<Anchor>//api/name/sHistory</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AHArticleController/sHistory</TokenIdentifier>
+			<Abstract type="html">An array that holds the session history</Abstract>
+			<DeclaredIn>AHArticleController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSMutableArray *sHistory</Declaration>
+			
+			
+			<Anchor>//api/name/sHistory</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHArticleController/setSIndex:</TokenIdentifier>
+			<Abstract type="html">The current index in the sHistory array</Abstract>
+			<DeclaredIn>AHArticleController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) int sIndex</Declaration>
+			
+			
+			<Anchor>//api/name/sIndex</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AHArticleController/sIndex</TokenIdentifier>
+			<Abstract type="html">The current index in the sHistory array</Abstract>
+			<DeclaredIn>AHArticleController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) int sIndex</Declaration>
+			
+			
+			<Anchor>//api/name/sIndex</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHArticleController/setCurrentArticle:</TokenIdentifier>
+			<Abstract type="html">Information about the current article</Abstract>
+			<DeclaredIn>AHArticleController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSMutableDictionary *currentArticle</Declaration>
+			
+			
+			<Anchor>//api/name/currentArticle</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AHArticleController/currentArticle</TokenIdentifier>
+			<Abstract type="html">Information about the current article</Abstract>
+			<DeclaredIn>AHArticleController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSMutableDictionary *currentArticle</Declaration>
+			
+			
+			<Anchor>//api/name/currentArticle</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

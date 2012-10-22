@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/UIWebView+AHWikiEngineAdditions.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/UIWebView(AHWikiEngineAdditions)</TokenIdentifier>
+			<Abstract type="html">Category for searching in a UIWebView</Abstract>
+			<DeclaredIn>UIWebView+Additions.h</DeclaredIn>
+			
+			<NodeRef refid="14"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIWebView(AHWikiEngineAdditions)/highlightAllOccurencesOfString:</TokenIdentifier>
+			<Abstract type="html">Search and highlight occurrences of string</Abstract>
+			<DeclaredIn>UIWebView+Additions.h</DeclaredIn>			
+			
+			<Declaration>- (NSInteger)highlightAllOccurencesOfString:(NSString *)query</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>query</Name>
+					<Abstract type="html">The query string</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The number of occurrences</Abstract></ReturnValue>
+			<Anchor>//api/name/highlightAllOccurencesOfString:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIWebView(AHWikiEngineAdditions)/removeAllHighlights</TokenIdentifier>
+			<Abstract type="html">Remove all highlights from the web view and restore the previous state</Abstract>
+			<DeclaredIn>UIWebView+Additions.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeAllHighlights</Declaration>
+			
+			
+			<Anchor>//api/name/removeAllHighlights</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIWebView(AHWikiEngineAdditions)/nextSearchResult</TokenIdentifier>
+			<Abstract type="html">Highlight the next search result</Abstract>
+			<DeclaredIn>UIWebView+Additions.h</DeclaredIn>			
+			
+			<Declaration>- (void)nextSearchResult</Declaration>
+			
+			
+			<Anchor>//api/name/nextSearchResult</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIWebView(AHWikiEngineAdditions)/previousSearchResult</TokenIdentifier>
+			<Abstract type="html">Highlight the previous search result</Abstract>
+			<DeclaredIn>UIWebView+Additions.h</DeclaredIn>			
+			
+			<Declaration>- (void)previousSearchResult</Declaration>
+			
+			
+			<Anchor>//api/name/previousSearchResult</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIWebView(AHWikiEngineAdditions)/numSearchResults</TokenIdentifier>
+			<Abstract type="html">Returns the number of search results</Abstract>
+			<DeclaredIn>UIWebView+Additions.h</DeclaredIn>			
+			
+			<Declaration>- (int)numSearchResults</Declaration>
+			
+			<ReturnValue><Abstract type="html">Number of search results</Abstract></ReturnValue>
+			<Anchor>//api/name/numSearchResults</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIWebView(AHWikiEngineAdditions)/windowSize</TokenIdentifier>
+			<Abstract type="html">Returns the size of the window DOM element</Abstract>
+			<DeclaredIn>UIWebView+Additions.h</DeclaredIn>			
+			
+			<Declaration>- (CGSize)windowSize</Declaration>
+			
+			<ReturnValue><Abstract type="html">Size of window</Abstract></ReturnValue>
+			<Anchor>//api/name/windowSize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIWebView(AHWikiEngineAdditions)/scrollOffset</TokenIdentifier>
+			<Abstract type="html">Returns the current scroll offset in the DOM document</Abstract>
+			<DeclaredIn>UIWebView+Additions.h</DeclaredIn>			
+			
+			<Declaration>- (CGPoint)scrollOffset</Declaration>
+			
+			<ReturnValue><Abstract type="html">Current scroll offset</Abstract></ReturnValue>
+			<Anchor>//api/name/scrollOffset</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

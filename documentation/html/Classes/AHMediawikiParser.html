@@ -1,0 +1,1378 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>AHMediawikiParser Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AHWikiEngine </a></h1>
+				<a id="developerHome" href="../index.html">Avocado Hills</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">AHMediawikiParser Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/captions">&nbsp;&nbsp;&nbsp;&nbsp;captions</option>
+	
+	<option value="//api/name/categories">&nbsp;&nbsp;&nbsp;&nbsp;categories</option>
+	
+	<option value="//api/name/entireArticle">&nbsp;&nbsp;&nbsp;&nbsp;entireArticle</option>
+	
+	<option value="//api/name/images">&nbsp;&nbsp;&nbsp;&nbsp;images</option>
+	
+	<option value="//api/name/langlinks">&nbsp;&nbsp;&nbsp;&nbsp;langlinks</option>
+	
+	<option value="//api/name/parsingFinishedEarly">&nbsp;&nbsp;&nbsp;&nbsp;parsingFinishedEarly</option>
+	
+	<option value="//api/name/representativeImg">&nbsp;&nbsp;&nbsp;&nbsp;representativeImg</option>
+	
+	<option value="//api/name/subdomain">&nbsp;&nbsp;&nbsp;&nbsp;subdomain</option>
+	
+	<option value="//api/name/tables">&nbsp;&nbsp;&nbsp;&nbsp;tables</option>
+	
+	<option value="//api/name/toc">&nbsp;&nbsp;&nbsp;&nbsp;toc</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/endElementInBodyText:">&nbsp;&nbsp;&nbsp;&nbsp;- endElementInBodyText:</option>
+	
+	<option value="//api/name/flushData">&nbsp;&nbsp;&nbsp;&nbsp;- flushData</option>
+	
+	<option value="//api/name/foundElementInBodyText:">&nbsp;&nbsp;&nbsp;&nbsp;- foundElementInBodyText:</option>
+	
+	<option value="//api/name/foundTableOfContentsLineItem:">&nbsp;&nbsp;&nbsp;&nbsp;- foundTableOfContentsLineItem:</option>
+	
+	<option value="//api/name/isParsingTable">&nbsp;&nbsp;&nbsp;&nbsp;- isParsingTable</option>
+	
+	<option value="//api/name/parseChunk:">&nbsp;&nbsp;&nbsp;&nbsp;- parseChunk:</option>
+	
+	<option value="//api/name/rewriteImageLink:">&nbsp;&nbsp;&nbsp;&nbsp;- rewriteImageLink:</option>
+	
+	<option value="//api/name/rewriteInternalLink:">&nbsp;&nbsp;&nbsp;&nbsp;- rewriteInternalLink:</option>
+	
+	<option value="//api/name/tableOfContentsClassName">&nbsp;&nbsp;&nbsp;&nbsp;- tableOfContentsClassName</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/captions">captions</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/categories">categories</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/entireArticle">entireArticle</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/images">images</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/langlinks">langlinks</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/parsingFinishedEarly">parsingFinishedEarly</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/representativeImg">representativeImg</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/subdomain">subdomain</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tables">tables</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/toc">toc</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/endElementInBodyText:">endElementInBodyText:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/flushData">flushData</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/foundElementInBodyText:">foundElementInBodyText:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/foundTableOfContentsLineItem:">foundTableOfContentsLineItem:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isParsingTable">isParsingTable</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/parseChunk:">parseChunk:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rewriteImageLink:">rewriteImageLink:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rewriteInternalLink:">rewriteInternalLink:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableOfContentsClassName">tableOfContentsClassName</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="AHMediawikiParser Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">AHMediawikiParser Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">AHMediawikiParser.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>SAX-style parser for Wiki pages. This class is responsible for parsing
+incoming data from <a href="../Classes/AHWikiURLProtocol.html">AHWikiURLProtocol</a>.</p>
+
+<p>This class returns the parsed data through <a href="#//api/name/flushData">flushData</a>.</p>
+
+<p>It also keeps a record of the entire parsed article in <a href="#//api/name/entireArticle">entireArticle</a>.</p>
+
+<p>It has multiple properties that hold metadata found in the article.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/foundElementInBodyText:">&ndash;&nbsp;foundElementInBodyText:</a></code>
+		<span class="tooltip"><p>Allows for custom processing of nodes</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/endElementInBodyText:">&ndash;&nbsp;endElementInBodyText:</a></code>
+		<span class="tooltip"><p>Allows for custom processing of nodes</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableOfContentsClassName">&ndash;&nbsp;tableOfContentsClassName</a></code>
+		<span class="tooltip"><p>The CSS class name for the text of table of contents line items</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/foundTableOfContentsLineItem:">&ndash;&nbsp;foundTableOfContentsLineItem:</a></code>
+		<span class="tooltip"><p>Allows for additional processing when a Table of Contents line-item is found</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rewriteInternalLink:">&ndash;&nbsp;rewriteInternalLink:</a></code>
+		<span class="tooltip"><p>Allows the rewriting of links to other Wiki pages</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rewriteImageLink:">&ndash;&nbsp;rewriteImageLink:</a></code>
+		<span class="tooltip"><p>Allows the rewriting of image src URLs</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isParsingTable">&ndash;&nbsp;isParsingTable</a></code>
+		<span class="tooltip"><p>Returns TRUE if the parser is currently in the middle of a table</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/flushData">&ndash;&nbsp;flushData</a></code>
+		<span class="tooltip"><p>Clears data buffer and pushes parsed data to <a href="#//api/name/entireArticle">entireArticle</a></p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/parseChunk:">&ndash;&nbsp;parseChunk:</a></code>
+		<span class="tooltip"><p>Pushes a chunk of data to be parsed</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/subdomain">&nbsp;&nbsp;subdomain</a></code>
+		<span class="tooltip"><p>Subdomain of the page being parsed</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/entireArticle">&nbsp;&nbsp;entireArticle</a></code>
+		<span class="tooltip"><p>The ultimate output of the parser</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/toc">&nbsp;&nbsp;toc</a></code>
+		<span class="tooltip"><p>Array containing the Table of Contents</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/images">&nbsp;&nbsp;images</a></code>
+		<span class="tooltip"><p>Array containing URLs of the images in the article</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/captions">&nbsp;&nbsp;captions</a></code>
+		<span class="tooltip"><p>Array containing captions for the <a href="#//api/name/images">images</a> in the article</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tables">&nbsp;&nbsp;tables</a></code>
+		<span class="tooltip"><p>Array containing the HTML of the tables in the article</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/categories">&nbsp;&nbsp;categories</a></code>
+		<span class="tooltip"><p>Array containing the categories the article belongs to</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/langlinks">&nbsp;&nbsp;langlinks</a></code>
+		<span class="tooltip"><p>Array containing links to this article in other languages</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/representativeImg">&nbsp;&nbsp;representativeImg</a></code>
+		<span class="tooltip"><p>URL of the first image in the article</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/parsingFinishedEarly">&nbsp;&nbsp;parsingFinishedEarly</a></code>
+		<span class="tooltip"><p>Allows <a href="../Classes/AHWikiURLProtocol.html">AHWikiURLProtocol</a> to finish the request early if all
+parsing has been completed</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/captions" title="captions"></a>
+	<h3 class="subsubtitle method-title">captions</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Array containing captions for the <a href="#//api/name/images">images</a> in the article</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSMutableArray *captions</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Array containing captions for the <a href="#//api/name/images">images</a> in the article</p>
+
+<p>Captions is meant to correspond 1-to-1 to <a href="#//api/name/images">images</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHMediawikiParser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/categories" title="categories"></a>
+	<h3 class="subsubtitle method-title">categories</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Array containing the categories the article belongs to</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSMutableArray *categories</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Array containing the categories the article belongs to</p>
+
+<p>Each entry has two parts:</p>
+
+<ul>
+<li>header (NSString *) = the title of the category</li>
+<li>link (NSString *) = the Wiki link to this category</li>
+</ul>
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHMediawikiParser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/entireArticle" title="entireArticle"></a>
+	<h3 class="subsubtitle method-title">entireArticle</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The ultimate output of the parser</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSMutableString *entireArticle</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The ultimate output of the parser</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHMediawikiParser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/images" title="images"></a>
+	<h3 class="subsubtitle method-title">images</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Array containing URLs of the images in the article</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSMutableArray *images</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Array containing URLs of the images in the article</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHMediawikiParser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/langlinks" title="langlinks"></a>
+	<h3 class="subsubtitle method-title">langlinks</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Array containing links to this article in other languages</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSMutableArray *langlinks</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Array containing links to this article in other languages</p>
+
+<p>Each entry has two parts:</p>
+
+<ul>
+<li>code (NSString *) = the language code (e.g. @&ldquo;zh&rdquo; for Chinese)</li>
+<li>link (NSString *) = the encoded URL for the article in this language</li>
+</ul>
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHMediawikiParser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/parsingFinishedEarly" title="parsingFinishedEarly"></a>
+	<h3 class="subsubtitle method-title">parsingFinishedEarly</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Allows <a href="../Classes/AHWikiURLProtocol.html">AHWikiURLProtocol</a> to finish the request early if all
+parsing has been completed</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL parsingFinishedEarly</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Allows <a href="../Classes/AHWikiURLProtocol.html">AHWikiURLProtocol</a> to finish the request early if all
+parsing has been completed</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHMediawikiParser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/representativeImg" title="representativeImg"></a>
+	<h3 class="subsubtitle method-title">representativeImg</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>URL of the first image in the article</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *representativeImg</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>URL of the first image in the article</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHMediawikiParser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/subdomain" title="subdomain"></a>
+	<h3 class="subsubtitle method-title">subdomain</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Subdomain of the page being parsed</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *subdomain</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Subdomain of the page being parsed</p>
+
+<p>Used to help reconstruct links</p>
+
+<p>For example, the subdomain of an English Wikipedia article would be @&ldquo;en&rdquo;</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHMediawikiParser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tables" title="tables"></a>
+	<h3 class="subsubtitle method-title">tables</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Array containing the HTML of the tables in the article</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSMutableArray *tables</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Array containing the HTML of the tables in the article</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHMediawikiParser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/toc" title="toc"></a>
+	<h3 class="subsubtitle method-title">toc</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Array containing the Table of Contents</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSMutableArray *toc</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Array containing the Table of Contents</p>
+
+<p>Each entry in the Table of Contents has three entries</p>
+
+<ul>
+<li>level (NSNumber) = The level of nesting for this entry</li>
+<li>link (NSString *) = The anchor tag of the section represented by this item</li>
+<li>text (NSString *) = The text of this item</li>
+</ul>
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHMediawikiParser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/endElementInBodyText:" title="endElementInBodyText:"></a>
+	<h3 class="subsubtitle method-title">endElementInBodyText:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Allows for custom processing of nodes</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)endElementInBodyText:(const char *)<em>name</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The name of the element that has just ended</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Allows for custom processing of nodes</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHMediawikiParser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/flushData" title="flushData"></a>
+	<h3 class="subsubtitle method-title">flushData</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Clears data buffer and pushes parsed data to <a href="#//api/name/entireArticle">entireArticle</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSData *)flushData</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns newly processed data using NSUTF8StringEncoding</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Clears data buffer and pushes parsed data to <a href="#//api/name/entireArticle">entireArticle</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHMediawikiParser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/foundElementInBodyText:" title="foundElementInBodyText:"></a>
+	<h3 class="subsubtitle method-title">foundElementInBodyText:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Allows for custom processing of nodes</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)foundElementInBodyText:(const char *)<em>name</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The name of the element that has just begun</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Allows for custom processing of nodes</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHMediawikiParser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/foundTableOfContentsLineItem:" title="foundTableOfContentsLineItem:"></a>
+	<h3 class="subsubtitle method-title">foundTableOfContentsLineItem:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Allows for additional processing when a Table of Contents line-item is found</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)foundTableOfContentsLineItem:(NSString *)<em>className</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>className</em></dt>
+			<dd><p>The name of the CSS class found</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Allows for additional processing when a Table of Contents line-item is found</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHMediawikiParser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isParsingTable" title="isParsingTable"></a>
+	<h3 class="subsubtitle method-title">isParsingTable</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns TRUE if the parser is currently in the middle of a table</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isParsingTable</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns TRUE if the parser is currently in the middle of a table</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHMediawikiParser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/parseChunk:" title="parseChunk:"></a>
+	<h3 class="subsubtitle method-title">parseChunk:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Pushes a chunk of data to be parsed</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)parseChunk:(NSData *)<em>data</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>data</em></dt>
+			<dd><p>Data to be parsed</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Pushes a chunk of data to be parsed</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHMediawikiParser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rewriteImageLink:" title="rewriteImageLink:"></a>
+	<h3 class="subsubtitle method-title">rewriteImageLink:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Allows the rewriting of image src URLs</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)rewriteImageLink:(NSMutableString *)<em>tag</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tag</em></dt>
+			<dd><p>String that contains the IMG tag</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Allows the rewriting of image src URLs</p>
+
+<p>This can be useful if you want <a href="#//api/name/images">images</a> to be handled by a separate URLProtocol</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHMediawikiParser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rewriteInternalLink:" title="rewriteInternalLink:"></a>
+	<h3 class="subsubtitle method-title">rewriteInternalLink:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Allows the rewriting of links to other Wiki pages</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)rewriteInternalLink:(NSMutableString *)<em>tag</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tag</em></dt>
+			<dd><p>String that contains the A tag</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Allows the rewriting of links to other Wiki pages</p>
+
+<p>This can be useful if you want <a href="#//api/name/images">images</a> to be handled by a separate NSURLProtocol</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHMediawikiParser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableOfContentsClassName" title="tableOfContentsClassName"></a>
+	<h3 class="subsubtitle method-title">tableOfContentsClassName</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The CSS class name for the text of table of contents line items</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)tableOfContentsClassName</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The CSS class name to be used</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The CSS class name for the text of table of contents line items</p>
+
+<p>The default is @&ldquo;toctext&rdquo;</p>
+
+<p>This can be useful when customizing for other types of Wikis</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHMediawikiParser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Avocado Hills. All rights reserved. (Last updated: 2012-10-21)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

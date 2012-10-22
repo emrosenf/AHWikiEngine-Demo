@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/AHWikiController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/AHWikiController</TokenIdentifier>
+			<Abstract type="html">This protocol abstracts the interactions between the AHArticleController and performing operations on various Wikis. This protocol is useful when customizing AHWikiEngine framework to use a different Wiki backend.</Abstract>
+			<DeclaredIn>AHWikiController.h</DeclaredIn>
+			
+			<NodeRef refid="18"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHWikiController/loadRandom</TokenIdentifier>
+			<Abstract type="html">Loads a random article from the Wiki</Abstract>
+			<DeclaredIn>AHWikiController.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadRandom</Declaration>
+			
+			
+			<Anchor>//api/name/loadRandom</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHWikiController/loadArticleNamed:</TokenIdentifier>
+			<Abstract type="html">Loads an article with the given title from the Wiki. This method assumes that the standard subdomain is @&quot;en&quot;, as in English Wikipedia. It does</Abstract>
+			<DeclaredIn>AHWikiController.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadArticleNamed:(NSString *)title</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">The title of the article to load</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/loadArticleNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHWikiController/loadArticleNamed:subdomain:</TokenIdentifier>
+			<Abstract type="html">Loads an article with the given title and subdomain from the Wiki.</Abstract>
+			<DeclaredIn>AHWikiController.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadArticleNamed:(NSString *)title subdomain:(NSString *)subdomain</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">The title of the article to load</Abstract>
+				</Parameter><Parameter>
+					<Name>subdomain</Name>
+					<Abstract type="html">The subdomain of the article</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/loadArticleNamed:subdomain:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHWikiController/goToArticle:</TokenIdentifier>
+			<Abstract type="html">Load an article</Abstract>
+			<DeclaredIn>AHWikiController.h</DeclaredIn>			
+			
+			<Declaration>- (void)goToArticle:(NSDictionary *)article</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>article</Name>
+					<Abstract type="html">Dictionary containing information about the article</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/goToArticle:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHWikiController/loadArticle:</TokenIdentifier>
+			<Abstract type="html">Load an article</Abstract>
+			<DeclaredIn>AHWikiController.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadArticle:(NSDictionary *)article</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>article</Name>
+					<Abstract type="html">Dictionary containing information about the article</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/loadArticle:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHWikiController/imageURL:</TokenIdentifier>
+			<Abstract type="html">Convert an image URL from an internal URL to an external URL</Abstract>
+			<DeclaredIn>AHWikiController.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)imageURL:(NSString *)url</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">URL of the image</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The absolute URL of the image</Abstract></ReturnValue>
+			<Anchor>//api/name/imageURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHWikiController/shouldLoadPage:</TokenIdentifier>
+			<Abstract type="html">Called before a page is loaded to determine if loading should continue</Abstract>
+			<DeclaredIn>AHWikiController.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)shouldLoadPage:(NSString *)title</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">Title of the page to load</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Whether the page should load</Abstract></ReturnValue>
+			<Anchor>//api/name/shouldLoadPage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHWikiController/loadPage:</TokenIdentifier>
+			<Abstract type="html">Called when a page is loaded</Abstract>
+			<DeclaredIn>AHWikiController.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadPage:(NSString *)title</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">Title of the page being loaded</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/loadPage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHWikiController/setArticleController:</TokenIdentifier>
+			<Abstract type="html">A reference to the AHArticleController</Abstract>
+			<DeclaredIn>AHWikiController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, unsafe_unretained) NSObject&lt;AHArticleController&gt; *articleController</Declaration>
+			
+			
+			<Anchor>//api/name/articleController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/AHWikiController/articleController</TokenIdentifier>
+			<Abstract type="html">A reference to the AHArticleController</Abstract>
+			<DeclaredIn>AHWikiController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, unsafe_unretained) NSObject&lt;AHArticleController&gt; *articleController</Declaration>
+			
+			
+			<Anchor>//api/name/articleController</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

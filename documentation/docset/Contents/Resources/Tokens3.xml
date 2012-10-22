@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AHGalleryViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AHGalleryViewController</TokenIdentifier>
+			<Abstract type="html">Displays the article&apos;s images in an elegant photo gallery</Abstract>
+			<DeclaredIn>AHGalleryViewController.h</DeclaredIn>
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHGalleryViewController/toggleNavBar</TokenIdentifier>
+			<Abstract type="html">Animates the showing or hiding of the top navigation bar and bottom toolbar</Abstract>
+			<DeclaredIn>AHGalleryViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)toggleNavBar</Declaration>
+			
+			
+			<Anchor>//api/name/toggleNavBar</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHGalleryViewController/goToImageNamed:</TokenIdentifier>
+			<Abstract type="html">Navigates to the specified image in the imageData array</Abstract>
+			<DeclaredIn>AHGalleryViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)goToImageNamed:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the image to navigate to.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/goToImageNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHGalleryViewController/actionActions:</TokenIdentifier>
+			<Abstract type="html">Action that is performed when the actions button is pressed. Subclasses may want to override this.</Abstract>
+			<DeclaredIn>AHGalleryViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)actionActions:(id)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">The sender of the action</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/actionActions:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHGalleryViewController/setImageData:</TokenIdentifier>
+			<Abstract type="html">Array of images in the gallery</Abstract>
+			<DeclaredIn>AHGalleryViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSArray *imageData</Declaration>
+			
+			
+			<Anchor>//api/name/imageData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AHGalleryViewController/imageData</TokenIdentifier>
+			<Abstract type="html">Array of images in the gallery</Abstract>
+			<DeclaredIn>AHGalleryViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSArray *imageData</Declaration>
+			
+			
+			<Anchor>//api/name/imageData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHGalleryViewController/setProgressView:</TokenIdentifier>
+			<Abstract type="html">An indicator used to show loading progress</Abstract>
+			<DeclaredIn>AHGalleryViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) TKProgressCircleView *progressView</Declaration>
+			
+			
+			<Anchor>//api/name/progressView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AHGalleryViewController/progressView</TokenIdentifier>
+			<Abstract type="html">An indicator used to show loading progress</Abstract>
+			<DeclaredIn>AHGalleryViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) TKProgressCircleView *progressView</Declaration>
+			
+			
+			<Anchor>//api/name/progressView</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

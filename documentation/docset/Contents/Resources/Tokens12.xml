@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AHWikiViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AHWikiViewController</TokenIdentifier>
+			<Abstract type="html">UIViewController used to display Wiki articles and user interface for
+navigating them (back button, forward button, table of contents, actions)</Abstract>
+			<DeclaredIn>AHWikiViewController.h</DeclaredIn>
+			
+			<NodeRef refid="12"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHWikiViewController/setArticleController:</TokenIdentifier>
+			<Abstract type="html">Reference to the AHArticleController implementation</Abstract>
+			<DeclaredIn>AHWikiViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) AHArticleController *articleController</Declaration>
+			
+			
+			<Anchor>//api/name/articleController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AHWikiViewController/articleController</TokenIdentifier>
+			<Abstract type="html">Reference to the AHArticleController implementation</Abstract>
+			<DeclaredIn>AHWikiViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) AHArticleController *articleController</Declaration>
+			
+			
+			<Anchor>//api/name/articleController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHWikiViewController/setPopover:</TokenIdentifier>
+			<Abstract type="html">Popover to display Table of Contents on iPad</Abstract>
+			<DeclaredIn>AHWikiViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIPopoverController *popover</Declaration>
+			
+			
+			<Anchor>//api/name/popover</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AHWikiViewController/popover</TokenIdentifier>
+			<Abstract type="html">Popover to display Table of Contents on iPad</Abstract>
+			<DeclaredIn>AHWikiViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIPopoverController *popover</Declaration>
+			
+			
+			<Anchor>//api/name/popover</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHWikiViewController/setWebView:</TokenIdentifier>
+			<Abstract type="html">Underlying UIWebView</Abstract>
+			<DeclaredIn>AHWikiViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIWebView *webView</Declaration>
+			
+			
+			<Anchor>//api/name/webView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AHWikiViewController/webView</TokenIdentifier>
+			<Abstract type="html">Underlying UIWebView</Abstract>
+			<DeclaredIn>AHWikiViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIWebView *webView</Declaration>
+			
+			
+			<Anchor>//api/name/webView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHWikiViewController/setModalWebView:</TokenIdentifier>
+			<Abstract type="html">Modal controller to displaying tables on iPhone</Abstract>
+			<DeclaredIn>AHWikiViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) AHModalWebViewController *modalWebView</Declaration>
+			
+			
+			<Anchor>//api/name/modalWebView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AHWikiViewController/modalWebView</TokenIdentifier>
+			<Abstract type="html">Modal controller to displaying tables on iPhone</Abstract>
+			<DeclaredIn>AHWikiViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) AHModalWebViewController *modalWebView</Declaration>
+			
+			
+			<Anchor>//api/name/modalWebView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHWikiViewController/setBulletController:</TokenIdentifier>
+			<Abstract type="html">Table of Contents view controller</Abstract>
+			<DeclaredIn>AHWikiViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) AHBulletViewController *bulletController</Declaration>
+			
+			
+			<Anchor>//api/name/bulletController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AHWikiViewController/bulletController</TokenIdentifier>
+			<Abstract type="html">Table of Contents view controller</Abstract>
+			<DeclaredIn>AHWikiViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) AHBulletViewController *bulletController</Declaration>
+			
+			
+			<Anchor>//api/name/bulletController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHWikiViewController/setBackButton:</TokenIdentifier>
+			<Abstract type="html">Back button</Abstract>
+			<DeclaredIn>AHWikiViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIBarButtonItem *backButton</Declaration>
+			
+			
+			<Anchor>//api/name/backButton</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AHWikiViewController/backButton</TokenIdentifier>
+			<Abstract type="html">Back button</Abstract>
+			<DeclaredIn>AHWikiViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIBarButtonItem *backButton</Declaration>
+			
+			
+			<Anchor>//api/name/backButton</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHWikiViewController/setForwardButton:</TokenIdentifier>
+			<Abstract type="html">Forward button</Abstract>
+			<DeclaredIn>AHWikiViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIBarButtonItem *forwardButton</Declaration>
+			
+			
+			<Anchor>//api/name/forwardButton</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AHWikiViewController/forwardButton</TokenIdentifier>
+			<Abstract type="html">Forward button</Abstract>
+			<DeclaredIn>AHWikiViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIBarButtonItem *forwardButton</Declaration>
+			
+			
+			<Anchor>//api/name/forwardButton</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHWikiViewController/setTocButton:</TokenIdentifier>
+			<Abstract type="html">Table of Contents button</Abstract>
+			<DeclaredIn>AHWikiViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIBarButtonItem *tocButton</Declaration>
+			
+			
+			<Anchor>//api/name/tocButton</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AHWikiViewController/tocButton</TokenIdentifier>
+			<Abstract type="html">Table of Contents button</Abstract>
+			<DeclaredIn>AHWikiViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIBarButtonItem *tocButton</Declaration>
+			
+			
+			<Anchor>//api/name/tocButton</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHWikiViewController/setActionButton:</TokenIdentifier>
+			<Abstract type="html">Action button</Abstract>
+			<DeclaredIn>AHWikiViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIBarButtonItem *actionButton</Declaration>
+			
+			
+			<Anchor>//api/name/actionButton</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AHWikiViewController/actionButton</TokenIdentifier>
+			<Abstract type="html">Action button</Abstract>
+			<DeclaredIn>AHWikiViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIBarButtonItem *actionButton</Declaration>
+			
+			
+			<Anchor>//api/name/actionButton</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHWikiViewController/actionActions:</TokenIdentifier>
+			<Abstract type="html">Show possible actions when action button is pressed</Abstract>
+			<DeclaredIn>AHWikiViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)actionActions:(id)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">Sender of the action</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/actionActions:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHWikiViewController/loadRequest:</TokenIdentifier>
+			<Abstract type="html">Load Request in webView</Abstract>
+			<DeclaredIn>AHWikiViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadRequest:(NSURLRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">Request to load</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/loadRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHWikiViewController/loadArticleNamed:</TokenIdentifier>
+			<Abstract type="html">Load article in webView</Abstract>
+			<DeclaredIn>AHWikiViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadArticleNamed:(NSString *)title</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">Title of article to load</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/loadArticleNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHWikiViewController/loadArticleNamed:subdomain:</TokenIdentifier>
+			<Abstract type="html">Load article with title and subdomain in webView</Abstract>
+			<DeclaredIn>AHWikiViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadArticleNamed:(NSString *)title subdomain:(NSString *)subdomain</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">Title of article to load</Abstract>
+				</Parameter><Parameter>
+					<Name>subdomain</Name>
+					<Abstract type="html">subdomain of the article</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/loadArticleNamed:subdomain:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

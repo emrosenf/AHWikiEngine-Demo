@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AHWikiEngine.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AHWikiEngine</TokenIdentifier>
+			<Abstract type="html">This is the master class of the framework and handles some configurations.</Abstract>
+			<DeclaredIn>AHWikiEngine.h</DeclaredIn>
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AHWikiEngine/start</TokenIdentifier>
+			<Abstract type="html">Start AHWikiEngine and load necessary components</Abstract>
+			<DeclaredIn>AHWikiEngine.h</DeclaredIn>			
+			
+			<Declaration>+ (void)start</Declaration>
+			
+			
+			<Anchor>//api/name/start</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AHWikiEngine/startWithConfiguration:</TokenIdentifier>
+			<Abstract type="html">Start AHWikiEngine and load necessary components using given configuration</Abstract>
+			<DeclaredIn>AHWikiEngine.h</DeclaredIn>			
+			
+			<Declaration>+ (void)startWithConfiguration:(AHWikiConfiguration *)configuration</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>configuration</Name>
+					<Abstract type="html">Configuration instance to use</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/startWithConfiguration:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AHWikiEngine/parser</TokenIdentifier>
+			<Abstract type="html">Parser for AHWikiURLProtocol to use</Abstract>
+			<DeclaredIn>AHWikiEngine.h</DeclaredIn>			
+			
+			<Declaration>+ (AHMediawikiParser *)parser</Declaration>
+			
+			<ReturnValue><Abstract type="html">parser Parser to use</Abstract></ReturnValue>
+			<Anchor>//api/name/parser</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AHWikiEngine/cssFilename</TokenIdentifier>
+			<Abstract type="html">CSS file name to be embedded in all pages</Abstract>
+			<DeclaredIn>AHWikiEngine.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)cssFilename</Declaration>
+			
+			<ReturnValue><Abstract type="html">The CSS file name</Abstract></ReturnValue>
+			<Anchor>//api/name/cssFilename</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AHWikiEngine/humanize:</TokenIdentifier>
+			<Abstract type="html">Convert a wikified phrase into a human readable phrase. For example:
+      [self humanize:@&quot;thiswikiphrase&quot;] </Abstract>
+			<DeclaredIn>AHWikiEngine.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)humanize:(NSString *)phrase</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>phrase</Name>
+					<Abstract type="html">A Wikified phrase</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The humanized phrase</Abstract></ReturnValue>
+			<Anchor>//api/name/humanize:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AHWikiEngine/urlFromTitle:subdomain:</TokenIdentifier>
+			<Abstract type="html">Generate actual URL for an article given its title and subdomain</Abstract>
+			<DeclaredIn>AHWikiEngine.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)urlFromTitle:(NSString *)title subdomain:(NSString *)subdomain</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">The title of the article</Abstract>
+				</Parameter><Parameter>
+					<Name>subdomain</Name>
+					<Abstract type="html">The subdomain of the article</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The URL string</Abstract></ReturnValue>
+			<Anchor>//api/name/urlFromTitle:subdomain:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AHWikiEngine/hostForSubdomain:</TokenIdentifier>
+			<Abstract type="html">Generate host for subdomain</Abstract>
+			<DeclaredIn>AHWikiEngine.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)hostForSubdomain:(NSString *)subdomain</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>subdomain</Name>
+					<Abstract type="html">Subdomain to use</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The URL host</Abstract></ReturnValue>
+			<Anchor>//api/name/hostForSubdomain:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AHWikiEngine/sharedInstance</TokenIdentifier>
+			<Abstract type="html">Shared instance</Abstract>
+			<DeclaredIn>AHWikiEngine.h</DeclaredIn>			
+			
+			<Declaration>+ (AHWikiEngine *)sharedInstance</Declaration>
+			
+			<ReturnValue><Abstract type="html">Shared Instance</Abstract></ReturnValue>
+			<Anchor>//api/name/sharedInstance</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AHWikiEngine/registerURLProtocol:</TokenIdentifier>
+			<Abstract type="html">Register an alternate URL protocol</Abstract>
+			<DeclaredIn>AHWikiEngine.h</DeclaredIn>			
+			
+			<Declaration>+ (void)registerURLProtocol:(Class)urlProtocolClass</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>urlProtocolClass</Name>
+					<Abstract type="html">The NSURLProtocol subclass to replace AHWikiURLProtocol</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/registerURLProtocol:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

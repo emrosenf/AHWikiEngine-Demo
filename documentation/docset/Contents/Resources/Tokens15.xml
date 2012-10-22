@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/AHArticleController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/AHArticleController</TokenIdentifier>
+			<Abstract type="html">This protocol describes an AHArticleController implementation</Abstract>
+			<DeclaredIn>AHArticleControllerProtocol.h</DeclaredIn>
+			
+			<NodeRef refid="15"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHArticleController/currentLink</TokenIdentifier>
+			<Abstract type="html">External link to the current article</Abstract>
+			<DeclaredIn>AHArticleControllerProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)currentLink</Declaration>
+			
+			<ReturnValue><Abstract type="html">Link to current article</Abstract></ReturnValue>
+			<Anchor>//api/name/currentLink</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHArticleController/currentTitle</TokenIdentifier>
+			<Abstract type="html">Title of the current article</Abstract>
+			<DeclaredIn>AHArticleControllerProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)currentTitle</Declaration>
+			
+			<ReturnValue><Abstract type="html">Title of the current article</Abstract></ReturnValue>
+			<Anchor>//api/name/currentTitle</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHArticleController/goBack:</TokenIdentifier>
+			<Abstract type="html">Go to the previous article</Abstract>
+			<DeclaredIn>AHArticleControllerProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (void)goBack:(id)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">Sender of the action</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/goBack:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHArticleController/goForward:</TokenIdentifier>
+			<Abstract type="html">Go to the next article</Abstract>
+			<DeclaredIn>AHArticleControllerProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (void)goForward:(id)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">Sender of the action</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/goForward:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHArticleController/searchCurrentArticle:</TokenIdentifier>
+			<Abstract type="html">Search the current article for a query</Abstract>
+			<DeclaredIn>AHArticleControllerProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (void)searchCurrentArticle:(NSString *)query</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>query</Name>
+					<Abstract type="html">Search query</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/searchCurrentArticle:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHArticleController/loadRequest:</TokenIdentifier>
+			<Abstract type="html">Load a request in the web view</Abstract>
+			<DeclaredIn>AHArticleControllerProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadRequest:(NSURLRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">Request to load</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/loadRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHArticleController/executeJS:</TokenIdentifier>
+			<Abstract type="html">Execute Javascript in web view</Abstract>
+			<DeclaredIn>AHArticleControllerProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)executeJS:(NSString *)script</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>script</Name>
+					<Abstract type="html">Script to execute</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returned text from javascript</Abstract></ReturnValue>
+			<Anchor>//api/name/executeJS:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHArticleController/loadHTML:withBaseURL:</TokenIdentifier>
+			<Abstract type="html">Loads HTML string in web view</Abstract>
+			<DeclaredIn>AHArticleControllerProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadHTML:(NSString *)html withBaseURL:(NSURL *)url</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>html</Name>
+					<Abstract type="html">HTML to load</Abstract>
+				</Parameter><Parameter>
+					<Name>url</Name>
+					<Abstract type="html">Base URL</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/loadHTML:withBaseURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHArticleController/loadRandom</TokenIdentifier>
+			<Abstract type="html">Loads random article from Wiki</Abstract>
+			<DeclaredIn>AHArticleControllerProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadRandom</Declaration>
+			
+			
+			<Anchor>//api/name/loadRandom</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHArticleController/loadArticleNamed:</TokenIdentifier>
+			<Abstract type="html">Loads article with given name from Wiki</Abstract>
+			<DeclaredIn>AHArticleControllerProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadArticleNamed:(NSString *)title</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">Title of article to load</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/loadArticleNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHArticleController/loadArticleNamed:subdomain:</TokenIdentifier>
+			<Abstract type="html">Loads article with given name and subdomain from Wiki</Abstract>
+			<DeclaredIn>AHArticleControllerProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadArticleNamed:(NSString *)title subdomain:(NSString *)subdomain</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">Title of article to load</Abstract>
+				</Parameter><Parameter>
+					<Name>subdomain</Name>
+					<Abstract type="html">Subdomain to use</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/loadArticleNamed:subdomain:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHArticleController/addToHistory:</TokenIdentifier>
+			<Abstract type="html">Adds article to history</Abstract>
+			<DeclaredIn>AHArticleControllerProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (void)addToHistory:(NSDictionary *)article</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>article</Name>
+					<Abstract type="html">Article to add</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addToHistory:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHArticleController/switchArticle:</TokenIdentifier>
+			<Abstract type="html">Switch article and update UI</Abstract>
+			<DeclaredIn>AHArticleControllerProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (void)switchArticle:(NSString *)title</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">Title of new article</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/switchArticle:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHArticleController/getHistory</TokenIdentifier>
+			<Abstract type="html">Gets the history array</Abstract>
+			<DeclaredIn>AHArticleControllerProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)getHistory</Declaration>
+			
+			<ReturnValue><Abstract type="html">NSArray* of article objects</Abstract></ReturnValue>
+			<Anchor>//api/name/getHistory</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHArticleController/setHistory:</TokenIdentifier>
+			<Abstract type="html">Sets the history array</Abstract>
+			<DeclaredIn>AHArticleControllerProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (void)setHistory:(NSArray *)history</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>history</Name>
+					<Abstract type="html">New history array</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setHistory:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHArticleController/configureUI:</TokenIdentifier>
+			<Abstract type="html">Configures the UI for the current article</Abstract>
+			<DeclaredIn>AHArticleControllerProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (void)configureUI:(NSDictionary *)article</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>article</Name>
+					<Abstract type="html">New article</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/configureUI:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHArticleController/getArticle:</TokenIdentifier>
+			<Abstract type="html">Gets the article for the given title</Abstract>
+			<DeclaredIn>AHArticleControllerProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)getArticle:(NSString *)title</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">Title of article to fetch</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">NSDictionary* of article</Abstract></ReturnValue>
+			<Anchor>//api/name/getArticle:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHArticleController/imagesForArticle:</TokenIdentifier>
+			<Abstract type="html">Returns list of found images for a given article.
+This method allows the author to filter by size or other
+criteria.</Abstract>
+			<DeclaredIn>AHArticleControllerProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)imagesForArticle:(NSDictionary *)article</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>article</Name>
+					<Abstract type="html">Article to get images for</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Array of images</Abstract></ReturnValue>
+			<Anchor>//api/name/imagesForArticle:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHArticleController/webViewFinishedLoading:</TokenIdentifier>
+			<Abstract type="html">WebView delegate to process web view event</Abstract>
+			<DeclaredIn>AHArticleControllerProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (void)webViewFinishedLoading:(NSString *)url</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">URL string that finished loading</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/webViewFinishedLoading:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHArticleController/webView:shouldLoadRequest:tableBlock:linkBlock:</TokenIdentifier>
+			<Abstract type="html">WebView delegate to process web view event</Abstract>
+			<DeclaredIn>AHArticleControllerProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)webView:(id)webView shouldLoadRequest:(NSURLRequest *)request tableBlock:(void ( ^ ) ( NSString *, NSURL *))tableBlock linkBlock:(void ( ^ ) ( NSString *))linkBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>webView</Name>
+					<Abstract type="html">web view loading</Abstract>
+				</Parameter><Parameter>
+					<Name>request</Name>
+					<Abstract type="html">Request that should be loading</Abstract>
+				</Parameter><Parameter>
+					<Name>tableBlock</Name>
+					<Abstract type="html">Block to display tables</Abstract>
+				</Parameter><Parameter>
+					<Name>linkBlock</Name>
+					<Abstract type="html">Block to display external links</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Whether request should load</Abstract></ReturnValue>
+			<Anchor>//api/name/webView:shouldLoadRequest:tableBlock:linkBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHArticleController/didReceiveMemoryWarning</TokenIdentifier>
+			<Abstract type="html">Allows for cleanup when memory is low</Abstract>
+			<DeclaredIn>AHArticleControllerProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (void)didReceiveMemoryWarning</Declaration>
+			
+			
+			<Anchor>//api/name/didReceiveMemoryWarning</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

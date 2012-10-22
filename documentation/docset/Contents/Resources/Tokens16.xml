@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/AHArticleViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/AHArticleViewController</TokenIdentifier>
+			<Abstract type="html">This protocol describes the underlying view controller that displays articles. Although it has many similiarties to UIResponder and UIViewController, it has been written in this way to be platform agnostic.</Abstract>
+			<DeclaredIn>AHArticleViewController.h</DeclaredIn>
+			
+			<NodeRef refid="16"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHArticleViewController/title</TokenIdentifier>
+			<Abstract type="html">The title of the current page</Abstract>
+			<DeclaredIn>AHArticleViewController.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)title</Declaration>
+			
+			<ReturnValue><Abstract type="html">title The title of the current page</Abstract></ReturnValue>
+			<Anchor>//api/name/title</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHArticleViewController/setTitle:</TokenIdentifier>
+			<Abstract type="html">Setter for the title</Abstract>
+			<DeclaredIn>AHArticleViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)setTitle:(NSString *)title</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">The title to set</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setTitle:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHArticleViewController/executeJS:</TokenIdentifier>
+			<Abstract type="html">Executes javascript string in the underlying web view</Abstract>
+			<DeclaredIn>AHArticleViewController.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)executeJS:(NSString *)javascript</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>javascript</Name>
+					<Abstract type="html">The javascript to run</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The result of the javascript execution</Abstract></ReturnValue>
+			<Anchor>//api/name/executeJS:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHArticleViewController/becomeFirstResponder</TokenIdentifier>
+			<Abstract type="html">UIResponder method</Abstract>
+			<DeclaredIn>AHArticleViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)becomeFirstResponder</Declaration>
+			
+			
+			<Anchor>//api/name/becomeFirstResponder</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHArticleViewController/presentViewController:animated:completion:</TokenIdentifier>
+			<Abstract type="html">UIViewController method to present view controller modally</Abstract>
+			<DeclaredIn>AHArticleViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)presentViewController:(UIViewController *)controller animated:(BOOL)animated completion:(void ( ^ ) ( void ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>controller</Name>
+					<Abstract type="html">Controller to present</Abstract>
+				</Parameter><Parameter>
+					<Name>animated</Name>
+					<Abstract type="html">Whether the presentation should be animated</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">Block to execute on completion</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/presentViewController:animated:completion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHArticleViewController/closeSubordinate</TokenIdentifier>
+			<Abstract type="html">Either dismiss a modal view controller or dismiss a popup (iPad only)</Abstract>
+			<DeclaredIn>AHArticleViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)closeSubordinate</Declaration>
+			
+			
+			<Anchor>//api/name/closeSubordinate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHArticleViewController/webView</TokenIdentifier>
+			<Abstract type="html">The underlying UIWebView</Abstract>
+			<DeclaredIn>AHArticleViewController.h</DeclaredIn>			
+			
+			<Declaration>- (UIWebView *)webView</Declaration>
+			
+			<ReturnValue><Abstract type="html">The UIWebView</Abstract></ReturnValue>
+			<Anchor>//api/name/webView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHArticleViewController/openURL:</TokenIdentifier>
+			<Abstract type="html">Open a URL string</Abstract>
+			<DeclaredIn>AHArticleViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)openURL:(NSString *)url</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">NSString * of the url to open</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/openURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHArticleViewController/setBackButtonEnabled:</TokenIdentifier>
+			<Abstract type="html">Adjusts the state of the back navigation button</Abstract>
+			<DeclaredIn>AHArticleViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)setBackButtonEnabled:(BOOL)enabled</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>enabled</Name>
+					<Abstract type="html">Whether the back button should be enabled</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setBackButtonEnabled:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AHArticleViewController/setForwardButtonEnabled:</TokenIdentifier>
+			<Abstract type="html">Adjusts the state of the forward navigation button</Abstract>
+			<DeclaredIn>AHArticleViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)setForwardButtonEnabled:(BOOL)enabled</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>enabled</Name>
+					<Abstract type="html">Whether the forward button should be enabled</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setForwardButtonEnabled:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

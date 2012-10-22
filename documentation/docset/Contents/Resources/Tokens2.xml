@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AHBulletViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AHBulletViewController</TokenIdentifier>
+			<Abstract type="html">A class for display Table of Contents data and navigating to the
+proper anchor tag</Abstract>
+			<DeclaredIn>AHBulletViewController.h</DeclaredIn>
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHBulletViewController/setDelegate:</TokenIdentifier>
+			<Abstract type="html">Weak reference to the AHArticleViewController implementation</Abstract>
+			<DeclaredIn>AHBulletViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, weak) id&lt;AHArticleViewController&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AHBulletViewController/delegate</TokenIdentifier>
+			<Abstract type="html">Weak reference to the AHArticleViewController implementation</Abstract>
+			<DeclaredIn>AHBulletViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, weak) id&lt;AHArticleViewController&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHBulletViewController/setData:</TokenIdentifier>
+			<Abstract type="html">Table of Contents data</Abstract>
+			<DeclaredIn>AHBulletViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSMutableArray *data</Declaration>
+			
+			
+			<Anchor>//api/name/data</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AHBulletViewController/data</TokenIdentifier>
+			<Abstract type="html">Table of Contents data</Abstract>
+			<DeclaredIn>AHBulletViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSMutableArray *data</Declaration>
+			
+			
+			<Anchor>//api/name/data</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

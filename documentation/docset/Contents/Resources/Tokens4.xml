@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AHIOSWebController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AHIOSWebController</TokenIdentifier>
+			<Abstract type="html">AHWebController implementation for iOS</Abstract>
+			<DeclaredIn>AHIOSWebController.h</DeclaredIn>
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHIOSWebController/gallery</TokenIdentifier>
+			<Abstract type="html">The AHGalleryViewController instance to be used as the image gallery</Abstract>
+			<DeclaredIn>AHIOSWebController.h</DeclaredIn>			
+			
+			<Declaration>- (AHGalleryViewController *)gallery</Declaration>
+			
+			
+			<Anchor>//api/name/gallery</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHIOSWebController/setArticleController:</TokenIdentifier>
+			<Abstract type="html">Weak reference to the AHArticleController instance</Abstract>
+			<DeclaredIn>AHIOSWebController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, weak) AHArticleController *articleController</Declaration>
+			
+			
+			<Anchor>//api/name/articleController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AHIOSWebController/articleController</TokenIdentifier>
+			<Abstract type="html">Weak reference to the AHArticleController instance</Abstract>
+			<DeclaredIn>AHIOSWebController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, weak) AHArticleController *articleController</Declaration>
+			
+			
+			<Anchor>//api/name/articleController</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

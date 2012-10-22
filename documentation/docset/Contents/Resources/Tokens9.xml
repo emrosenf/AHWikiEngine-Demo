@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AHWikiConfiguration.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AHWikiConfiguration</TokenIdentifier>
+			<Abstract type="html">Set the progress with the circle animating to the progress.</Abstract>
+			<DeclaredIn>AHWikiConfiguration.h</DeclaredIn>
+			
+			<NodeRef refid="9"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHWikiConfiguration/urlFromTitle:subdomain:</TokenIdentifier>
+			<Abstract type="html">Generate actual URL for an article given its title and subdomain</Abstract>
+			<DeclaredIn>AHWikiConfiguration.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)urlFromTitle:(NSString *)title subdomain:(NSString *)subdomain</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">The title of the article</Abstract>
+				</Parameter><Parameter>
+					<Name>subdomain</Name>
+					<Abstract type="html">The subdomain of the article</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The URL string</Abstract></ReturnValue>
+			<Anchor>//api/name/urlFromTitle:subdomain:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHWikiConfiguration/hostForSubdomain:</TokenIdentifier>
+			<Abstract type="html">Generate host for subdomain</Abstract>
+			<DeclaredIn>AHWikiConfiguration.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)hostForSubdomain:(NSString *)subdomain</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>subdomain</Name>
+					<Abstract type="html">Subdomain to use</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The URL host</Abstract></ReturnValue>
+			<Anchor>//api/name/hostForSubdomain:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHWikiConfiguration/setDomain:</TokenIdentifier>
+			<Abstract type="html">The web domain of the current Wiki (e.g. wikipedia.org)</Abstract>
+			<DeclaredIn>AHWikiConfiguration.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *domain</Declaration>
+			
+			
+			<Anchor>//api/name/domain</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AHWikiConfiguration/domain</TokenIdentifier>
+			<Abstract type="html">The web domain of the current Wiki (e.g. wikipedia.org)</Abstract>
+			<DeclaredIn>AHWikiConfiguration.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *domain</Declaration>
+			
+			
+			<Anchor>//api/name/domain</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHWikiConfiguration/setApiPath:</TokenIdentifier>
+			<Abstract type="html">The path to the api of the current Wiki (e.g. w/api.php)</Abstract>
+			<DeclaredIn>AHWikiConfiguration.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *apiPath</Declaration>
+			
+			
+			<Anchor>//api/name/apiPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AHWikiConfiguration/apiPath</TokenIdentifier>
+			<Abstract type="html">The path to the api of the current Wiki (e.g. w/api.php)</Abstract>
+			<DeclaredIn>AHWikiConfiguration.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *apiPath</Declaration>
+			
+			
+			<Anchor>//api/name/apiPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHWikiConfiguration/setArticlePath:</TokenIdentifier>
+			<Abstract type="html">The path to Wiki articles in this domain (e.g. wiki/)</Abstract>
+			<DeclaredIn>AHWikiConfiguration.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *articlePath</Declaration>
+			
+			
+			<Anchor>//api/name/articlePath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AHWikiConfiguration/articlePath</TokenIdentifier>
+			<Abstract type="html">The path to Wiki articles in this domain (e.g. wiki/)</Abstract>
+			<DeclaredIn>AHWikiConfiguration.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *articlePath</Declaration>
+			
+			
+			<Anchor>//api/name/articlePath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHWikiConfiguration/setParserClass:</TokenIdentifier>
+			<Abstract type="html">The class to be used for parsing articles</Abstract>
+			<DeclaredIn>AHWikiConfiguration.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite) Class parserClass</Declaration>
+			
+			
+			<Anchor>//api/name/parserClass</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AHWikiConfiguration/parserClass</TokenIdentifier>
+			<Abstract type="html">The class to be used for parsing articles</Abstract>
+			<DeclaredIn>AHWikiConfiguration.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite) Class parserClass</Declaration>
+			
+			
+			<Anchor>//api/name/parserClass</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHWikiConfiguration/setCssFilename:</TokenIdentifier>
+			<Abstract type="html">The CSS file to be included in every displayed article</Abstract>
+			<DeclaredIn>AHWikiConfiguration.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *cssFilename</Declaration>
+			
+			
+			<Anchor>//api/name/cssFilename</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AHWikiConfiguration/cssFilename</TokenIdentifier>
+			<Abstract type="html">The CSS file to be included in every displayed article</Abstract>
+			<DeclaredIn>AHWikiConfiguration.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *cssFilename</Declaration>
+			
+			
+			<Anchor>//api/name/cssFilename</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

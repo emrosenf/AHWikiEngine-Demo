@@ -1,0 +1,1576 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>AHArticleController Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AHWikiEngine </a></h1>
+				<a id="developerHome" href="../index.html">Avocado Hills</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">AHArticleController Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addToHistory:">&nbsp;&nbsp;&nbsp;&nbsp;- addToHistory:</option>
+	
+	<option value="//api/name/configureUI:">&nbsp;&nbsp;&nbsp;&nbsp;- configureUI:</option>
+	
+	<option value="//api/name/currentLink">&nbsp;&nbsp;&nbsp;&nbsp;- currentLink</option>
+	
+	<option value="//api/name/currentTitle">&nbsp;&nbsp;&nbsp;&nbsp;- currentTitle</option>
+	
+	<option value="//api/name/didReceiveMemoryWarning">&nbsp;&nbsp;&nbsp;&nbsp;- didReceiveMemoryWarning</option>
+	
+	<option value="//api/name/executeJS:">&nbsp;&nbsp;&nbsp;&nbsp;- executeJS:</option>
+	
+	<option value="//api/name/getArticle:">&nbsp;&nbsp;&nbsp;&nbsp;- getArticle:</option>
+	
+	<option value="//api/name/getHistory">&nbsp;&nbsp;&nbsp;&nbsp;- getHistory</option>
+	
+	<option value="//api/name/goBack:">&nbsp;&nbsp;&nbsp;&nbsp;- goBack:</option>
+	
+	<option value="//api/name/goForward:">&nbsp;&nbsp;&nbsp;&nbsp;- goForward:</option>
+	
+	<option value="//api/name/imagesForArticle:">&nbsp;&nbsp;&nbsp;&nbsp;- imagesForArticle:</option>
+	
+	<option value="//api/name/loadArticleNamed:">&nbsp;&nbsp;&nbsp;&nbsp;- loadArticleNamed:</option>
+	
+	<option value="//api/name/loadArticleNamed:subdomain:">&nbsp;&nbsp;&nbsp;&nbsp;- loadArticleNamed:subdomain:</option>
+	
+	<option value="//api/name/loadHTML:withBaseURL:">&nbsp;&nbsp;&nbsp;&nbsp;- loadHTML:withBaseURL:</option>
+	
+	<option value="//api/name/loadRandom">&nbsp;&nbsp;&nbsp;&nbsp;- loadRandom</option>
+	
+	<option value="//api/name/loadRequest:">&nbsp;&nbsp;&nbsp;&nbsp;- loadRequest:</option>
+	
+	<option value="//api/name/searchCurrentArticle:">&nbsp;&nbsp;&nbsp;&nbsp;- searchCurrentArticle:</option>
+	
+	<option value="//api/name/setHistory:">&nbsp;&nbsp;&nbsp;&nbsp;- setHistory:</option>
+	
+	<option value="//api/name/switchArticle:">&nbsp;&nbsp;&nbsp;&nbsp;- switchArticle:</option>
+	
+	<option value="//api/name/webView:shouldLoadRequest:tableBlock:linkBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- webView:shouldLoadRequest:tableBlock:linkBlock:</option>
+	
+	<option value="//api/name/webViewFinishedLoading:">&nbsp;&nbsp;&nbsp;&nbsp;- webViewFinishedLoading:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addToHistory:">addToHistory:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/configureUI:">configureUI:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/currentLink">currentLink</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/currentTitle">currentTitle</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didReceiveMemoryWarning">didReceiveMemoryWarning</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/executeJS:">executeJS:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getArticle:">getArticle:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getHistory">getHistory</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/goBack:">goBack:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/goForward:">goForward:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/imagesForArticle:">imagesForArticle:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadArticleNamed:">loadArticleNamed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadArticleNamed:subdomain:">loadArticleNamed:subdomain:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadHTML:withBaseURL:">loadHTML:withBaseURL:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadRandom">loadRandom</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadRequest:">loadRequest:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/searchCurrentArticle:">searchCurrentArticle:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setHistory:">setHistory:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/switchArticle:">switchArticle:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/webView:shouldLoadRequest:tableBlock:linkBlock:">webView:shouldLoadRequest:tableBlock:linkBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/webViewFinishedLoading:">webViewFinishedLoading:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="AHArticleController Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">AHArticleController Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">AHArticleControllerProtocol.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This protocol describes an AHArticleController implementation</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/currentLink">&ndash;&nbsp;currentLink</a></code>
+		<span class="tooltip"><p>External link to the current article</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/currentTitle">&ndash;&nbsp;currentTitle</a></code>
+		<span class="tooltip"><p>Title of the current article</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/goBack:">&ndash;&nbsp;goBack:</a></code>
+		<span class="tooltip"><p>Go to the previous article</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/goForward:">&ndash;&nbsp;goForward:</a></code>
+		<span class="tooltip"><p>Go to the next article</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/searchCurrentArticle:">&ndash;&nbsp;searchCurrentArticle:</a></code>
+		<span class="tooltip"><p>Search the current article for a query</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadRequest:">&ndash;&nbsp;loadRequest:</a></code>
+		<span class="tooltip"><p>Load a request in the web view</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/executeJS:">&ndash;&nbsp;executeJS:</a></code>
+		<span class="tooltip"><p>Execute Javascript in web view</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadHTML:withBaseURL:">&ndash;&nbsp;loadHTML:withBaseURL:</a></code>
+		<span class="tooltip"><p>Loads HTML string in web view</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadRandom">&ndash;&nbsp;loadRandom</a></code>
+		<span class="tooltip"><p>Loads random article from Wiki</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadArticleNamed:">&ndash;&nbsp;loadArticleNamed:</a></code>
+		<span class="tooltip"><p>Loads article with given name from Wiki</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadArticleNamed:subdomain:">&ndash;&nbsp;loadArticleNamed:subdomain:</a></code>
+		<span class="tooltip"><p>Loads article with given name and subdomain from Wiki</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addToHistory:">&ndash;&nbsp;addToHistory:</a></code>
+		<span class="tooltip"><p>Adds article to history</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/switchArticle:">&ndash;&nbsp;switchArticle:</a></code>
+		<span class="tooltip"><p>Switch article and update UI</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getHistory">&ndash;&nbsp;getHistory</a></code>
+		<span class="tooltip"><p>Gets the history array</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setHistory:">&ndash;&nbsp;setHistory:</a></code>
+		<span class="tooltip"><p>Sets the history array</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/configureUI:">&ndash;&nbsp;configureUI:</a></code>
+		<span class="tooltip"><p>Configures the UI for the current article</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getArticle:">&ndash;&nbsp;getArticle:</a></code>
+		<span class="tooltip"><p>Gets the article for the given title</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/imagesForArticle:">&ndash;&nbsp;imagesForArticle:</a></code>
+		<span class="tooltip"><p>Returns list of found images for a given article.
+This method allows the author to filter by size or other
+criteria.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/webViewFinishedLoading:">&ndash;&nbsp;webViewFinishedLoading:</a></code>
+		<span class="tooltip"><p>WebView delegate to process web view event</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/webView:shouldLoadRequest:tableBlock:linkBlock:">&ndash;&nbsp;webView:shouldLoadRequest:tableBlock:linkBlock:</a></code>
+		<span class="tooltip"><p>WebView delegate to process web view event</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didReceiveMemoryWarning">&ndash;&nbsp;didReceiveMemoryWarning</a></code>
+		<span class="tooltip"><p>Allows for cleanup when memory is low</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addToHistory:" title="addToHistory:"></a>
+	<h3 class="subsubtitle method-title">addToHistory:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Adds article to history</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)addToHistory:(NSDictionary *)<em>article</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>article</em></dt>
+			<dd><p>Article to add</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Adds article to history</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHArticleControllerProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/configureUI:" title="configureUI:"></a>
+	<h3 class="subsubtitle method-title">configureUI:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Configures the UI for the current article</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)configureUI:(NSDictionary *)<em>article</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>article</em></dt>
+			<dd><p>New article</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Configures the UI for the current article</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHArticleControllerProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/currentLink" title="currentLink"></a>
+	<h3 class="subsubtitle method-title">currentLink</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>External link to the current article</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)currentLink</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Link to current article</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>External link to the current article</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHArticleControllerProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/currentTitle" title="currentTitle"></a>
+	<h3 class="subsubtitle method-title">currentTitle</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Title of the current article</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)currentTitle</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Title of the current article</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Title of the current article</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHArticleControllerProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didReceiveMemoryWarning" title="didReceiveMemoryWarning"></a>
+	<h3 class="subsubtitle method-title">didReceiveMemoryWarning</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Allows for cleanup when memory is low</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)didReceiveMemoryWarning</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Allows for cleanup when memory is low</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHArticleControllerProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/executeJS:" title="executeJS:"></a>
+	<h3 class="subsubtitle method-title">executeJS:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Execute Javascript in web view</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)executeJS:(NSString *)<em>script</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>script</em></dt>
+			<dd><p>Script to execute</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returned text from javascript</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Execute Javascript in web view</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHArticleControllerProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getArticle:" title="getArticle:"></a>
+	<h3 class="subsubtitle method-title">getArticle:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gets the article for the given title</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)getArticle:(NSString *)<em>title</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>title</em></dt>
+			<dd><p>Title of article to fetch</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>NSDictionary* of article</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Gets the article for the given title</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHArticleControllerProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getHistory" title="getHistory"></a>
+	<h3 class="subsubtitle method-title">getHistory</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gets the history array</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)getHistory</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>NSArray* of article objects</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Gets the history array</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHArticleControllerProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/goBack:" title="goBack:"></a>
+	<h3 class="subsubtitle method-title">goBack:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Go to the previous article</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)goBack:(id)<em>sender</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sender</em></dt>
+			<dd><p>Sender of the action</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Go to the previous article</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHArticleControllerProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/goForward:" title="goForward:"></a>
+	<h3 class="subsubtitle method-title">goForward:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Go to the next article</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)goForward:(id)<em>sender</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sender</em></dt>
+			<dd><p>Sender of the action</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Go to the next article</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHArticleControllerProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/imagesForArticle:" title="imagesForArticle:"></a>
+	<h3 class="subsubtitle method-title">imagesForArticle:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns list of found images for a given article.
+This method allows the author to filter by size or other
+criteria.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)imagesForArticle:(NSDictionary *)<em>article</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>article</em></dt>
+			<dd><p>Article to get images for</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Array of images</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns list of found images for a given article.
+This method allows the author to filter by size or other
+criteria.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHArticleControllerProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadArticleNamed:" title="loadArticleNamed:"></a>
+	<h3 class="subsubtitle method-title">loadArticleNamed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Loads article with given name from Wiki</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)loadArticleNamed:(NSString *)<em>title</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>title</em></dt>
+			<dd><p>Title of article to load</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Loads article with given name from Wiki</p><div class="warning"><p><strong>Warning:</strong> Assumes subdomain is @&ldquo;en&rdquo;</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHArticleControllerProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadArticleNamed:subdomain:" title="loadArticleNamed:subdomain:"></a>
+	<h3 class="subsubtitle method-title">loadArticleNamed:subdomain:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Loads article with given name and subdomain from Wiki</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)loadArticleNamed:(NSString *)<em>title</em> subdomain:(NSString *)<em>subdomain</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>title</em></dt>
+			<dd><p>Title of article to load</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>subdomain</em></dt>
+			<dd><p>Subdomain to use</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Loads article with given name and subdomain from Wiki</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHArticleControllerProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadHTML:withBaseURL:" title="loadHTML:withBaseURL:"></a>
+	<h3 class="subsubtitle method-title">loadHTML:withBaseURL:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Loads HTML string in web view</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)loadHTML:(NSString *)<em>html</em> withBaseURL:(NSURL *)<em>url</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>html</em></dt>
+			<dd><p>HTML to load</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>url</em></dt>
+			<dd><p>Base URL</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Loads HTML string in web view</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHArticleControllerProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadRandom" title="loadRandom"></a>
+	<h3 class="subsubtitle method-title">loadRandom</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Loads random article from Wiki</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)loadRandom</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Loads random article from Wiki</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHArticleControllerProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadRequest:" title="loadRequest:"></a>
+	<h3 class="subsubtitle method-title">loadRequest:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Load a request in the web view</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)loadRequest:(NSURLRequest *)<em>request</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>request</em></dt>
+			<dd><p>Request to load</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Load a request in the web view</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHArticleControllerProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/searchCurrentArticle:" title="searchCurrentArticle:"></a>
+	<h3 class="subsubtitle method-title">searchCurrentArticle:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Search the current article for a query</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)searchCurrentArticle:(NSString *)<em>query</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>query</em></dt>
+			<dd><p>Search query</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Search the current article for a query</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHArticleControllerProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setHistory:" title="setHistory:"></a>
+	<h3 class="subsubtitle method-title">setHistory:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the history array</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setHistory:(NSArray *)<em>history</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>history</em></dt>
+			<dd><p>New history array</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets the history array</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHArticleControllerProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/switchArticle:" title="switchArticle:"></a>
+	<h3 class="subsubtitle method-title">switchArticle:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Switch article and update UI</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)switchArticle:(NSString *)<em>title</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>title</em></dt>
+			<dd><p>Title of new article</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Switch article and update UI</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHArticleControllerProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/webView:shouldLoadRequest:tableBlock:linkBlock:" title="webView:shouldLoadRequest:tableBlock:linkBlock:"></a>
+	<h3 class="subsubtitle method-title">webView:shouldLoadRequest:tableBlock:linkBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>WebView delegate to process web view event</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)webView:(id)<em>webView</em> shouldLoadRequest:(NSURLRequest *)<em>request</em> tableBlock:(void ( ^ ) ( NSString *, NSURL *))<em>tableBlock</em> linkBlock:(void ( ^ ) ( NSString *))<em>linkBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>webView</em></dt>
+			<dd><p>web view loading</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>request</em></dt>
+			<dd><p>Request that should be loading</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tableBlock</em></dt>
+			<dd><p>Block to display tables</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>linkBlock</em></dt>
+			<dd><p>Block to display external links</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Whether request should load</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>WebView delegate to process web view event</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHArticleControllerProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/webViewFinishedLoading:" title="webViewFinishedLoading:"></a>
+	<h3 class="subsubtitle method-title">webViewFinishedLoading:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>WebView delegate to process web view event</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)webViewFinishedLoading:(NSString *)<em>url</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>url</em></dt>
+			<dd><p>URL string that finished loading</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>WebView delegate to process web view event</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AHArticleControllerProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Avocado Hills. All rights reserved. (Last updated: 2012-10-21)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

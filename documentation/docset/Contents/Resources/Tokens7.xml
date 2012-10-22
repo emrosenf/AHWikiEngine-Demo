@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AHModalWebViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AHModalWebViewController</TokenIdentifier>
+			<Abstract type="html">UINavigationController subclass that wraps a UIViewController with a UIWebView for loading tables or other pages</Abstract>
+			<DeclaredIn>AHModalWebViewController.h</DeclaredIn>
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHModalWebViewController/initWithAddress:</TokenIdentifier>
+			<Abstract type="html">Initialize with URL</Abstract>
+			<DeclaredIn>AHModalWebViewController.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithAddress:(NSString *)urlString</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>urlString</Name>
+					<Abstract type="html">the URL as a NSString *</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The initialized AHModalWebViewController</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithAddress:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHModalWebViewController/initWithURL:</TokenIdentifier>
+			<Abstract type="html">Initialize with URL</Abstract>
+			<DeclaredIn>AHModalWebViewController.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithURL:(NSURL *)URL</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>URL</Name>
+					<Abstract type="html">The URL as an NSURL *</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The initialized AHModalWebViewController</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHModalWebViewController/setWebViewController:</TokenIdentifier>
+			<Abstract type="html">The underlying view controller subclass</Abstract>
+			<DeclaredIn>AHModalWebViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) AHWebViewController *webViewController</Declaration>
+			
+			
+			<Anchor>//api/name/webViewController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AHModalWebViewController/webViewController</TokenIdentifier>
+			<Abstract type="html">The underlying view controller subclass</Abstract>
+			<DeclaredIn>AHModalWebViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) AHWebViewController *webViewController</Declaration>
+			
+			
+			<Anchor>//api/name/webViewController</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

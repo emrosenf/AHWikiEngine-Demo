@@ -1,0 +1,513 @@
+/*  ------------------------------------------------------- */
+/*  CSS RESET                                               */
+/*  ------------------------------------------------------- */
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+}
+
+html {
+    -webkit-text-size-adjust: none;
+}
+
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+    clear: both;
+}
+
+sub {
+    vertical-align:sub;
+    font-size:smaller;
+}
+
+sup {
+    vertical-align:super;
+    font-size:smaller;
+}
+
+hr { height: 1px; background-color: #aaa; border-top: 1px solid #aaa; margin: 0.25em 0; }
+
+ol, ul { margin: 1em 0;}
+ol li, ul li {
+    margin: 0.4em 0 0 2em;
+}
+ul li { list-style-type: square;}
+dt {
+    font-weight: bold;
+    margin-bottom: .1em;
+}
+dl {
+    margin-top: .2em;
+    margin-bottom: .5em;
+}
+dd {
+    line-height: 2em;
+    margin-left: 2em;
+    margin-bottom: .1em;
+}
+
+
+code {
+    background-color: #f9f9f9;
+}
+pre {
+    overflow:hidden;
+    white-space: pre-wrap;
+    padding: 1em;
+    border: 1px solid #2f6fab;
+    color: black;
+    background-color: #f9f9f9;
+    line-height: 1.1em;
+}
+
+
+b, strong { font-weight: bold;}
+i { font-style : italic;}
+/*  ENABLE HYPHENS                                          */
+/*  ------------------------------------------------------- */
+
+p,li,dl,td {
+	-webkit-hyphens:auto;
+}
+
+/*  END CSS RESET                                           */
+/*  ------------------------------------------------------- */
+
+/*  DO NOT DISPLAY THESE ELEMENTS                           */
+/*  ------------------------------------------------------- */
+
+.toc,
+#bksicon, /* German icon */
+.references-small, /* Albert Einstein, other references */
+.printfooter, /* retrieved from . . . at bottom of page */
+.editsection, /* Edit links */
+.noprint:not(span), /* v d e on tables */
+.printonly, /* misc icons */
+.hidden, /* internal */
+.metadata, /* encountered on audio: info, help */
+.Template-Fact, /* citation needed */
+#coordinates, /* Coordinates */
+.magnify, /* magnify icon */
+.catlinks, /* category links */
+.sisterproject, /* listen to this article (on barack obama page) */
+.infobox hr, /* annoying HR in infobox */
+.navbox .image, /* images in navboxes cause all sorts of awful css bugs */
+.internal /* "listen" links */
+{
+	display: none!important;
+}
+
+/* For German */
+table.hintergrundfarbe1.noprint {
+    display:block!important;
+}
+
+/* Russian Wikipedia */
+dl .noprint {
+    display:block!important;
+}
+
+.NavContent th, .NavContent td {
+    font-size: 13px!important;
+}
+
+/*  END DO NOT DISPLAY THESE ELEMENTS                       */
+/*  ------------------------------------------------------- */
+
+/*  ------------------------------------------------------- */
+/*  TEXT                                                    */
+/*  ------------------------------------------------------- */
+
+p {
+    margin: 0.75em 0;
+}
+
+body.ipad {
+    padding: 0 40px 32px;
+}
+
+body {
+    font-size:1.05em;
+    line-height:1.55em;
+}
+
+body {
+    font-family: "Georgia", serif;
+	background: #fff;
+	color:#222;
+    padding: 0 16px 32px;
+}
+
+body.table {
+    padding: 0!important;
+    margin-top: 0!important;
+}
+
+/*  ------------------------------------------------------- */
+/*  HEADERS                                                 */
+/*  ------------------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Georgia", serif;
+    font-weight: 400;
+    padding: 0.5em 0;
+	font-variant: small-caps;
+	display: block;
+	color: inherit;
+}
+
+h1 { font-size: 1.8em;}
+h2 { font-size: 1.6em;}
+h3 { font-size: 1.3em;}
+h4, h5, h6 { font-size: 1.2em;}
+/*  ------------------------------------------------------- */
+/*  REMOVE EXCESS PADDING                                   */
+
+h2+h3, h3+h4 {
+    padding-top: 0;
+}
+
+/*  ------------------------------------------------------- */
+/*  LINKS                                                   */
+/*  ------------------------------------------------------- */
+
+
+a {
+	color: #005799;
+    text-decoration: none;
+	-webkit-touch-callout:none;
+}
+a.image {
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+/*  MISSING LINK                                            */
+a.new {
+    color: #BA0000!important;
+}
+ 
+
+/*  EXTERNAL LINK                                           */
+/*  ------------------------------------------------------- */
+a.external {
+    -webkit-border-radius:2px!important;
+    background-color: #eee;
+}
+
+.night a.external {
+    background: #343434;
+}
+
+/*  ------------------------------------------------------- */
+/*  IMAGES                                                  */
+/*  ------------------------------------------------------- */
+
+.gallery {
+    max-width: 90%!important;
+}
+
+.gallerybox { 
+    list-style: none;
+    display: inline-block!important;
+}
+
+.gallerybox img {
+    margin-bottom: 1em;
+}
+
+div.thumbinner, .gallerybox > div{
+    -webkit-border-radius: 1px;
+    border: none;
+    padding: 7px !important;
+    background-color: #fff;
+    text-align: center;
+    overflow: hidden;
+    -webkit-box-shadow:0 2px 2px #555;
+}
+
+.night div.thumbinner, .night .gallerybox > div {
+    background: #343434;
+}
+
+.thumbimage {
+    border: 1px solid #ededed;
+    margin-bottom: 5px;
+}
+
+.thumbcaption {
+    font-size: 0.75em;
+    text-align: left;
+    line-height: 1.4em;
+    padding: 0.3em !important;
+}
+
+.gallerytext {
+    margin-top:-2em;
+    text-align: center;
+    max-width: 280px;
+    font-size: 1em;
+}
+
+
+/*  ------------------------------------------------------- */
+/*  TABLES                                                  */
+/*  ------------------------------------------------------- */
+
+
+.quotebox {
+    max-width: 85%;
+    background-color: transparent;
+}
+.infobox {
+    float: right;
+    /* the clear is important for smaller boxes i.e. on Al Gore */
+    clear: right;
+}
+
+.infobox,.wikitable,.prettytable {
+    border: 1px solid #b6b6b6;
+    font-size: 0.8em!important;
+    margin: 0.25em 0 0.25em 1em;
+}
+
+.infobox div, .infobox tr, .infobox td, .infobox th, .wikitable th { background:transparent!important;}
+.infobox tr, .wikitable tr {
+    border: 1px solid #c9c9c9;
+}
+
+.infobox th,.infobox td,.toccolours th,.toccolours td,.wikitable th,.wikitable td,.prettytable th,.prettytable td {
+    padding:5px;
+}
+
+.infobox th {
+    font-weight: bold;
+    
+}
+
+.infobox li {
+    list-style:none;
+}
+
+.navbox {
+    margin: 1em 0;
+    font-size: 14px!important;
+}
+
+.navbox-abovebelow li {
+    display:inline-block!important;
+}
+.navbox-group {
+    text-align:center!important;
+    border:none!important;
+    padding:0.75em 0.5em;
+    min-width: 100px;
+    vertical-align:middle!important;
+}
+
+.navbox-list, .navbox-abovebelow {
+    font-size: 0.9em;
+    border: none!important;
+}
+
+.navbox-title,.navbox-group {
+    color:#555;
+    background-color:#efefef;
+    font-weight: bold;
+}
+
+.night .navbox-title, .night .navbox-group {
+    background: #333!important;
+    color: #888;
+}
+
+.vertical-navbox {
+    margin-top: 1em!important;
+}
+
+// Gauss' Law
+.vertical-navbox li, .NavContent li {
+    list-style: none!important;
+}
+
+td ul li {
+    list-style: none!important;
+}
+
+
+/*  iPhone and iPad         */
+/*  ----------------------- */
+@media screen and (max-device-width: 480px) screen and (device-width: 768px) {
+    html, body {
+        overflow-y: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+/*  Not iPhone */
+
+@media not screen and (max-device-width: 480px) {
+
+.navbox-list li {
+    display: inline;
+    padding: 0!important;
+    margin: 0.4em 0 0 0.4em;
+}
+
+.navbox-group {
+    padding:0.2em 0.2em!important;
+}
+
+}
+
+/*  iPhone Only                                                   */
+/*  ------------------------------------------------------- */
+
+@media screen and (max-device-width: 480px) {
+    /* iPhone CSS rules here */
+    
+    body {
+        margin-top: 44px;
+    }
+    
+    body.plugin {
+        margin-top: 0px;
+    }
+        
+    .infobox {
+        float: none!important;
+    }
+    
+    .table table {
+        width: 100%;
+    }
+    
+    .infobox, .wikitable, .prettytable, .navbox {
+        margin: 0!important;
+    }
+    
+    .vcard { float: none!important;}
+
+    .thumbinner img{
+        width:128px!important;
+        min-width:128px;
+        height: auto!important;
+    }
+    
+    .thumbinner { max-width: 128px; }
+    
+    img { max-width: 85%!important; }
+}
+ 
+ 
+
+.tableLink {
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-border-radius: 8px;
+    border: 1px solid #888;
+    text-align: center;
+    background: #eee;
+    color: #333;
+    padding: 0.25em 0.5em;
+    margin: 0.5em 0;
+    clear: both;
+    display:block;
+}
+
+.night .tableLink {
+    background: #343434!important;
+}
+
+a.tableLink:hover {
+    border: 1px solid #333;
+}
+
+/*  ------------------------------------------------------- */
+/*  FLOAT                                                   */
+/*  ------------------------------------------------------- */
+
+.floatright, .tright { clear: right; float: right; margin: 0.75em 0 0.75em 0.75em;}
+.floatnone, .tnone { clear: both; float: none;}
+.floatleft, .tleft { clear: left; float: left; margin: 0.75em 0.75em 0.75em 0;}
+
+/*  ------------------------------------------------------- */
+/*  Related links, main article blocks                      */
+/*  ------------------------------------------------------- */
+
+.rellink, .dablink {
+    border:1px solid #b6b6b6;
+    background: #efefef;
+    font-style:italic;
+    margin-bottom:0.5em;
+    padding: 0.25em 0.5em;
+    font-size: 0.8em;
+    -webkit-border-radius: 5px;
+    overflow: hidden;
+}
+
+.night .rellink, .night .dablink {
+    background: #343434;
+    border: 1px solid #666;
+}
+
+.references {
+    margin-left: 10px;
+}
+
+.no_references .reference, .no_references .reflist {
+    display: none;
+}
+
+.reflist, .refbegin { font-size: 0.75em; 0.85em;}
+
+#footer-info-copyright {
+    list-style-type: none;
+    border-top: 1px solid #b9b9b9;
+    padding-top: 1em;
+    font-size: 0.75em;
+    line-height: 1.2em;
+    text-align: center;
+}
+
+div[id^='ogg'] button { display: none;}
+
+/*  ------------------------------------------------------- */
+/*  HIGHLIGHT                                                   */
+/*  ------------------------------------------------------- */
+
+.boxHighlight {
+    -webkit-box-shadow:#000 0 1px 3px;
+	-webkit-border-radius:2px;
+    border: 1px solid #ffe852;
+	
+}
+
+.highlight
+{
+	-webkit-box-shadow:#000 0 1px 3px;
+	-webkit-border-radius:2px;
+	color:#222;
+	background: -webkit-gradient(linear,left top,left bottom,from(#ffe852),to(#ffe03d));
+}

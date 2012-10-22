@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AHWikiURLProtocol.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AHWikiURLProtocol</TokenIdentifier>
+			<Abstract type="html">NSURLProtocol subclass that handles the loading and parsing of Wiki articles</Abstract>
+			<DeclaredIn>AHWikiURLProtocol.h</DeclaredIn>
+			
+			<NodeRef refid="11"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AHWikiURLProtocol/registerProtocol</TokenIdentifier>
+			<Abstract type="html">Register this NSURLProtocol</Abstract>
+			<DeclaredIn>AHWikiURLProtocol.h</DeclaredIn>			
+			
+			<Declaration>+ (void)registerProtocol</Declaration>
+			
+			
+			<Anchor>//api/name/registerProtocol</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AHWikiURLProtocol/unregisterProtocol</TokenIdentifier>
+			<Abstract type="html">Unregister this NSURLProtocol</Abstract>
+			<DeclaredIn>AHWikiURLProtocol.h</DeclaredIn>			
+			
+			<Declaration>+ (void)unregisterProtocol</Declaration>
+			
+			
+			<Anchor>//api/name/unregisterProtocol</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHWikiURLProtocol/sendData:</TokenIdentifier>
+			<Abstract type="html">Send data to the client</Abstract>
+			<DeclaredIn>AHWikiURLProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (void)sendData:(NSData *)data</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">Data to send to the client</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHWikiURLProtocol/finish</TokenIdentifier>
+			<Abstract type="html">Cleanup process</Abstract>
+			<DeclaredIn>AHWikiURLProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (void)finish</Declaration>
+			
+			
+			<Anchor>//api/name/finish</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHWikiURLProtocol/startOnlineFetch:</TokenIdentifier>
+			<Abstract type="html">Begin fetching the article</Abstract>
+			<DeclaredIn>AHWikiURLProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (void)startOnlineFetch:(NSString *)title</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">Title of the article</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/startOnlineFetch:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHWikiURLProtocol/sendHeaderHTML:</TokenIdentifier>
+			<Abstract type="html">Send header HTML to the client</Abstract>
+			<DeclaredIn>AHWikiURLProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (void)sendHeaderHTML:(NSString *)title</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">Title of the article</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendHeaderHTML:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHWikiURLProtocol/sendArticleMetadata</TokenIdentifier>
+			<Abstract type="html">Send the article metadata to the rest of the app by sending kArticleExtrasNotification</Abstract>
+			<DeclaredIn>AHWikiURLProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (void)sendArticleMetadata</Declaration>
+			
+			
+			<Anchor>//api/name/sendArticleMetadata</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHWikiURLProtocol/setProgress:</TokenIdentifier>
+			<Abstract type="html">Progress to set</Abstract>
+			<DeclaredIn>AHWikiURLProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (void)setProgress:(float)progress</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>progress</Name>
+					<Abstract type="html">Progress to set</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setProgress:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AHWikiURLProtocol/makeHeader:</TokenIdentifier>
+			<Abstract type="html">Create the HTML header of the page</Abstract>
+			<DeclaredIn>AHWikiURLProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)makeHeader:(NSString *)title</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">Title of the article</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">String containing the HTML header to return</Abstract></ReturnValue>
+			<Anchor>//api/name/makeHeader:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>
