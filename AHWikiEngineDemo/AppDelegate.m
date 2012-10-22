@@ -13,9 +13,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    //[AHWikiEngine start];
-    [AHWikiEngine startWithConfiguration:[WoWWikiConfiguration new]];
-    // Override point for customization after application launch.
     return YES;
 }
 
