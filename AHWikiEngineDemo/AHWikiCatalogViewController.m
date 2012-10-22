@@ -13,6 +13,7 @@
 #import "ZeldaWikiConfiguration.h"
 #import "CustomCSSWikiConfiguration.h"
 #import "CustomArticleController.h"
+#import "CustomWebpageViewController.h"
 
 @interface AHWikiCatalogViewController () {
     NSMutableArray *data;
@@ -104,6 +105,18 @@
         [wikiViewController loadArticleNamed:@"USA" subdomain:@"en"];
         [navController setViewControllers:@[wikiViewController]];
         [self presentViewController:navController animated:YES completion:nil];
+        [wikiViewController.articleController.webController performSelector:@selector(searchCurrentArticle:) withObject:@"united" afterDelay:3.0];
+    }]]}];
+    
+    
+    [data addObject:@{@"title": @"Using HTML", @"rows": @[[TableViewCellWrapper cellWithBlock:^(UITableViewCell *cell) {
+        cell.textLabel.text = @"HTML";
+    } selectBlock:^{
+        [AHWikiEngine start];
+        CustomWebpageViewController *webPageController = [CustomWebpageViewController new];
+        [navController setViewControllers:@[webPageController]];
+        [self presentViewController:navController animated:YES completion:nil];
+        //[wikiViewController.articleController.webController performSelector:@selector(searchCurrentArticle:) withObject:@"united" afterDelay:3.0];
     }]]}];
     
     [self.tableView reloadData];
