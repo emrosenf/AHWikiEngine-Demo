@@ -98,10 +98,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20C7BA471631057200B1366E /* libxml2.dylib in Frameworks */,
 				20C7BA1C1630FDF100B1366E /* UIKit.framework in Frameworks */,
 				20C7BA1E1630FDF100B1366E /* Foundation.framework in Frameworks */,
 				20C7BA201630FDF100B1366E /* CoreGraphics.framework in Frameworks */,
+				20C7BA471631057200B1366E /* libxml2.dylib in Frameworks */,
 				20C7BA451631043F00B1366E /* AHWikiEngine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +141,7 @@
 		20C7BA211630FDF100B1366E /* AHWikiEngineDemo */ = {
 			isa = PBXGroup;
 			children = (
+				20F2B6C716DC5F69002E48B9 /* No-UI */,
 				20C7BB0E1634CD6C00B1366E /* CustomCSSWiki */,
 				20C7BB0F1634CD6D00B1366E /* ZeldaWiki */,
 				20C7BAF91634584600B1366E /* Components */,
@@ -238,6 +239,13 @@
 				20C7BB111634CD6F00B1366E /* ZeldaWikiConfiguration.m */,
 			);
 			path = ZeldaWiki;
+			sourceTree = "<group>";
+		};
+		20F2B6C716DC5F69002E48B9 /* No-UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "No-UI";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

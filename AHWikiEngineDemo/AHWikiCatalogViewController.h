@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AHWikiCatalogViewController : UITableViewController
+@interface AHWikiCatalogViewController : UITableViewController<NSURLConnectionDataDelegate>
 
 @end

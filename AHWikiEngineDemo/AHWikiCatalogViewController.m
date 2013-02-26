@@ -19,6 +19,7 @@
     NSMutableArray *data;
     UINavigationController *navController;
     AHWikiViewController *wikiViewController;
+    AHMediawikiParser *parser;
 }
 
 @end
@@ -116,7 +117,15 @@
         CustomWebpageViewController *webPageController = [CustomWebpageViewController new];
         [navController setViewControllers:@[webPageController]];
         [self presentViewController:navController animated:YES completion:nil];
-        //[wikiViewController.articleController.webController performSelector:@selector(searchCurrentArticle:) withObject:@"united" afterDelay:3.0];
+    }]]}];
+    
+    [data addObject:@{@"title": @"No UI", @"rows": @[[TableViewCellWrapper cellWithBlock:^(UITableViewCell *cell) {
+        cell.textLabel.text = @"Parse USA";
+    } selectBlock:^{
+        [AHWikiEngine start];
+        parser = [AHWikiEngine parser];
+        parser.subdomain = @"en";
+        [NSURLConnection connectionWithRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://en.wikipedia.org/wiki/USA"]] delegate:self];
     }]]}];
     
     [self.tableView reloadData];
@@ -149,51 +158,28 @@
     return data[section][@"title"];
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     TableViewCellWrapper *wrp = data[indexPath.section][@"rows"][indexPath.row];
     wrp.selectBlock();
+}
+
+#pragma mark - No UI
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
+    NSLog(@"Parser finished");
+    NSString *entireArticle = [parser entireArticle];
+    NSArray *toc = [parser toc];
+    NSArray *images = [parser images];
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
+    [parser parseChunk:data];
+    if (![parser isParsingTable]) {
+        [parser flushData];
+    }
 }
 
 @end
