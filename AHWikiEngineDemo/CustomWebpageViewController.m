@@ -37,7 +37,7 @@
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
     if (navigationType == UIWebViewNavigationTypeLinkClicked) {
-        if ([request.URL.scheme isEqualToString:@"ahwikiengine"]) {
+        if ([request.URL.scheme isEqualToString:[AHWikiEngine protocol]]) {
             [self.wikiViewController loadRequest:request];
             UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:self.wikiViewController];
             [self presentViewController:nav animated:YES completion:nil];
