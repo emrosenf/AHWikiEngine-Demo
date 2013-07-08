@@ -10,10 +10,10 @@
 
 #if !(TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)
 #import <WebKit/WebKit.h>
-#endif
+#else
 
 #import "AHModalWebViewController.h"
-
+#endif
 /** This protocol describes the underlying view controller that displays articles. Although it has many similiarties to UIResponder and UIViewController, it has been written in this way to be platform agnostic. */ 
 @protocol AHArticleViewController <NSObject>
 

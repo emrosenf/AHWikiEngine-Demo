@@ -7,20 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
-typedef void (^CellBlock)(UITableViewCell *cell);
+typedef UITableViewCell* (^CellBlock)(void);
 typedef void (^didSelectBlock)(void);
 
 
 @interface TableViewCellWrapper : NSObject {
-
+    
 	
 }
 
 @property (nonatomic, copy) CellBlock cellBlock;
 @property (nonatomic, copy) didSelectBlock selectBlock;
 
-+ (id) cellWithBlock:(CellBlock)theCellBleck selectBlock:(didSelectBlock)theSelectBlock;
-- (id)initWithBlocks:(CellBlock)theCellBlock selectBlock:(didSelectBlock)theSelectBlock;
++ (id) cellWithBlock:(UITableViewCell*(^)(void))theCellBlock selectBlock:(void(^)(void))theSelectBlock;
+- (id)initWithBlocks:(UITableViewCell*(^)(void))theCellBlock selectBlock:(void(^)(void))theSelectBlock;
 
 
 @end

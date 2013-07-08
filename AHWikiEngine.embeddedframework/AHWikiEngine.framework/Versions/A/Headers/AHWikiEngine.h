@@ -67,16 +67,34 @@
  */
 + (NSString *)urlFromTitle:(NSString *)title subdomain:(NSString *)subdomain;
 
+/** Generate URL for subdomain
+ 
+ Example:
+ [AHWikiEngine apiURLForSubdomain:@"en"]
+ 
+ might return: @"http://en.wikipedia.org/w/api.php
+ @param subdomain Subdomain to use
+ @return The API URL
+ */
++ (NSString *)apiURLForSubdomain:(NSString*)subdomain;
+
 /** Generate host for subdomain
  
  Example:
- [self hostForSubdomain:@"en"]
+ [AHWikiEngine hostForSubdomain:@"en"]
  
  might return: @"http://en.wikipedia.org
  @param subdomain Subdomain to use
  @return The URL host
  */
 + (NSString *) hostForSubdomain:(NSString *)subdomain;
+
+/** URL Protocol to be hooked by AHWikiEngine
+ 
+ Defined in the AHWikiConfiguration subclass
+ 
+ @return The protocol to be hooked by AHWikiURLProtocol */
++ (NSString *) protocol;
 /** Shared instance
  @return Shared Instance
  */

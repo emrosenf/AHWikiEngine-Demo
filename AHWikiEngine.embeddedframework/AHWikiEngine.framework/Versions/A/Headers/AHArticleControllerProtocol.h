@@ -11,6 +11,11 @@
 /** This protocol describes an AHArticleController implementation */
 @protocol AHArticleController <NSObject>
 
+/** Current article dictionary 
+ @return Current article dictionary 
+ */
+@property (nonatomic, strong) NSMutableDictionary *currentArticle;
+
 - (void) prepareToLoadArticle:(NSString *)urlString;
 - (void) saveScrollPosition;
 
@@ -23,7 +28,6 @@
  @return Title of the current article
  */
 - (NSString*) currentTitle;
-- (NSMutableDictionary*)currentArticle;
 
 /** Go to the previous article
  @param sender Sender of the action

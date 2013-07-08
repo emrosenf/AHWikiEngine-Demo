@@ -10,7 +10,6 @@
 
 
 @implementation TableViewCellWrapper
-@synthesize cellBlock, selectBlock;
 
 + (id)cellWithBlock:(CellBlock)theCellBleck selectBlock:(didSelectBlock)theSelectBlock {
     TableViewCellWrapper *wrapper = [[self alloc] initWithBlocks:theCellBleck selectBlock:theSelectBlock];
@@ -23,6 +22,9 @@
 	{
 		self.cellBlock = theCellBlock;
 		self.selectBlock = theSelectBlock;
+        if (!self.selectBlock) {
+            self.selectBlock = ^{};
+        }
 	}
 	return self;
 }

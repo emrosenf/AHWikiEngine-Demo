@@ -33,14 +33,18 @@
  
  
  */
-@interface AHMediawikiParser : NSObject
+@interface AHMediawikiParser : NSObject {
+  unsigned int locationIndicator;
+  int travelTocLevel;
+}
 
 
 /** Allows for custom processing of nodes
  
  @param name The name of the element that has just begun
+ @param attributes HTML attributes array
  */
-- (void) foundElementInBodyText:(const char*)name;
+- (void) foundElementInBodyText:(const char*)name attributes:(xmlChar **)attributes;
 
 /** Allows for custom processing of nodes
  
@@ -78,6 +82,19 @@
  @param tag String that contains the IMG tag
  */
 - (void) rewriteImageLink:(NSMutableString*)tag;
+
+
+/** Finds the value of an HTML attribute from the given array
+ 
+ Example: 
+     [self getAttribute:"href" attributes:attributes]
+ 
+ Might return: @"http://www.google.com"
+ 
+ @param name The name of the attribute to search for
+ @param attributes The array of attributes
+ @return The attribute, if found. */
+- (NSString*) getAttribute:(const char*)name inArray:(xmlChar **)attributes;
 
 
 /** Returns TRUE if the parser is currently in the middle of a table */

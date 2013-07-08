@@ -6,18 +6,10 @@
 //  Copyright (c) 2012 Avocado Hills. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import "AHArticleControllerProtocol.h"
 
 /** UIViewController that wraps a UIWebView for displaying tables or other pages */
-@interface AHWebViewController : UIViewController
-
-
-/** Initialize with URL
- @param urlString the URL as a NSString *
- @return The initialized AHWebViewController
- */
-- (id)initWithAddress:(NSString*)urlString;
+@interface AHWebViewController : UIViewController<UIWebViewDelegate>
 
 /** Initialize with URL
  @param URL The URL as an NSURL *

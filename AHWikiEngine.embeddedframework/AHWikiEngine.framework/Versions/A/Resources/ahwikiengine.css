@@ -99,6 +99,7 @@ p,li,dl,td {
 /*  DO NOT DISPLAY THESE ELEMENTS                           */
 /*  ------------------------------------------------------- */
 
+.mw-editsection, /* [Edit] links */
 .toc,
 #bksicon, /* German icon */
 .references-small, /* Albert Einstein, other references */

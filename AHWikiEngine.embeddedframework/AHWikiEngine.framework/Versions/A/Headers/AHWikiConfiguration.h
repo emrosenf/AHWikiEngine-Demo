@@ -30,17 +30,34 @@
  Example:
     [self hostForSubdomain:@"en"]
  
- might return: @"http://en.wikipedia.org
+ might return: @"http://en.wikipedia.org"
  @param subdomain Subdomain to use
  @return The URL host
  */
 - (NSString *)hostForSubdomain:(NSString*)subdomain;
+
+/** Generate URL for API
+ 
+ Example:
+ [self apiURLForSubdomain:@"en"]
+ 
+ might return: @"http://en.wikipedia.org/w/api.php"
+ @param subdomain Subdomain to use
+ @return The API URL
+ */
+- (NSString *)apiURLForSubdomain:(NSString*)subdomain;
 
 /** The web domain of the current Wiki (e.g. wikipedia.org) */
 @property (nonatomic, strong) NSString *domain;
 
 /** The path to the api of the current Wiki (e.g. w/api.php) */
 @property (nonatomic, strong) NSString *apiPath;
+
+/** The protocol to be hooked by AHURLProtocol
+ 
+ The default protocol is ahwikiengine. This will hook URLs of the
+ type ahwikiengine://article/<SUBDOMAIN>/<TITLE> */
+@property (nonatomic, strong) NSString *protocol;
 
 /** The path to Wiki articles in this domain (e.g. wiki/) 
  

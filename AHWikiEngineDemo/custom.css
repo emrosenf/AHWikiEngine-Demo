@@ -233,6 +233,10 @@ a.external {
     margin-bottom: 1em;
 }
 
+div.thumbinner > div {
+	width: auto!important;
+}
+
 div.thumbinner, .gallerybox > div{
     -webkit-border-radius: 1px;
     border: none;

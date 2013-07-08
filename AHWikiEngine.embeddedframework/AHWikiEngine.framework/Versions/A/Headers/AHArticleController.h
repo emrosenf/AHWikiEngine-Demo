@@ -38,7 +38,7 @@
 @property (nonatomic, strong) NSMutableArray *sHistory;
 
 /** The current index in the sHistory array */
-@property (nonatomic, assign) int sIndex;
+@property (nonatomic, assign) NSUInteger sIndex;
 
 /** Information about the current article */
 @property (nonatomic, strong) NSMutableDictionary *currentArticle;

@@ -43,9 +43,11 @@
     
     navController = [UINavigationController new];
     wikiViewController = [AHWikiViewController new];
-
-    TableViewCellWrapper *enUSA = [TableViewCellWrapper cellWithBlock:^(UITableViewCell *cell) {
+    static NSString *CellIdentifier = @"CellIdentifier";
+    TableViewCellWrapper *enUSA = [TableViewCellWrapper cellWithBlock:^UITableViewCell * {
+        UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
         cell.textLabel.text = @"USA (English)";
+        return cell;
     } selectBlock:^{
         [AHWikiEngine start];
         wikiViewController.articleController = [AHArticleController new];
@@ -54,8 +56,10 @@
         [self presentViewController:navController animated:YES completion:nil];
     }];
     
-    TableViewCellWrapper *frUSA = [TableViewCellWrapper cellWithBlock:^(UITableViewCell *cell) {
+    TableViewCellWrapper *frUSA = [TableViewCellWrapper cellWithBlock:^UITableViewCell * {
+        UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
         cell.textLabel.text = @"USA (French)";
+        return cell;
     } selectBlock:^{
         [AHWikiEngine start];
         wikiViewController.articleController = [AHArticleController new];
@@ -64,8 +68,10 @@
         [self presentViewController:navController animated:YES completion:nil];
     }];
     
-    TableViewCellWrapper *ruUSA = [TableViewCellWrapper cellWithBlock:^(UITableViewCell *cell) {
+    TableViewCellWrapper *ruUSA = [TableViewCellWrapper cellWithBlock:^UITableViewCell * {
+        UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
         cell.textLabel.text = @"USA (Russian)";
+        return cell;
     } selectBlock:^{
         [AHWikiEngine start];
         wikiViewController.articleController = [AHArticleController new];
@@ -77,8 +83,10 @@
     NSDictionary *wikipedia = @{@"title" : @"Wikipedia", @"rows": @[enUSA, frUSA, ruUSA] };
     [data addObject:wikipedia];
     
-    [data addObject:@{@"title": @"World of Warcraft Wiki", @"rows": @[[TableViewCellWrapper cellWithBlock:^(UITableViewCell *cell) {
+    [data addObject:@{@"title": @"World of Warcraft Wiki", @"rows": @[[TableViewCellWrapper cellWithBlock:^UITableViewCell * {
+        UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
         cell.textLabel.text = @"Mage";
+        return cell;
     } selectBlock:^{
         [AHWikiEngine startWithConfiguration:[WoWWikiConfiguration new]];
         [wikiViewController loadArticleNamed:@"Mage" subdomain:@""];
@@ -88,8 +96,10 @@
     }]]}];
     
     
-    [data addObject:@{@"title": @"The Zelda Wiki", @"rows": @[[TableViewCellWrapper cellWithBlock:^(UITableViewCell *cell) {
+    [data addObject:@{@"title": @"The Zelda Wiki", @"rows": @[[TableViewCellWrapper cellWithBlock:^UITableViewCell * {
+        UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
         cell.textLabel.text = @"Princess Zelda";
+        return cell;
     } selectBlock:^{
         [AHWikiEngine startWithConfiguration:[ZeldaWikiConfiguration new]];
         [wikiViewController loadArticleNamed:@"Princess Zelda" subdomain:@""];
@@ -99,8 +109,10 @@
     }]]}];
     
     
-    [data addObject:@{@"title": @"Custom CSS", @"rows": @[[TableViewCellWrapper cellWithBlock:^(UITableViewCell *cell) {
+    [data addObject:@{@"title": @"Custom CSS", @"rows": @[[TableViewCellWrapper cellWithBlock:^UITableViewCell * {
+        UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
         cell.textLabel.text = @"USA (English)";
+        return cell;
     } selectBlock:^{
         [AHWikiEngine startWithConfiguration:[CustomCSSWikiConfiguration new]];
         [wikiViewController loadArticleNamed:@"USA" subdomain:@"en"];
@@ -110,8 +122,10 @@
     }]]}];
     
     
-    [data addObject:@{@"title": @"Using HTML", @"rows": @[[TableViewCellWrapper cellWithBlock:^(UITableViewCell *cell) {
+    [data addObject:@{@"title": @"Using HTML", @"rows": @[[TableViewCellWrapper cellWithBlock:^UITableViewCell * {
+        UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
         cell.textLabel.text = @"HTML";
+        return cell;
     } selectBlock:^{
         [AHWikiEngine start];
         CustomWebpageViewController *webPageController = [CustomWebpageViewController new];
@@ -119,8 +133,10 @@
         [self presentViewController:navController animated:YES completion:nil];
     }]]}];
     
-    [data addObject:@{@"title": @"No UI", @"rows": @[[TableViewCellWrapper cellWithBlock:^(UITableViewCell *cell) {
+    [data addObject:@{@"title": @"No UI", @"rows": @[[TableViewCellWrapper cellWithBlock:^UITableViewCell * {
+        UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
         cell.textLabel.text = @"Parse USA";
+        return cell;
     } selectBlock:^{
         [AHWikiEngine start];
         parser = [AHWikiEngine parser];
@@ -145,13 +161,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"CellIdentifier";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
     TableViewCellWrapper *wrp = data[indexPath.section][@"rows"][indexPath.row];
-    wrp.cellBlock(cell);
-    
-    return cell;
+    return wrp.cellBlock();
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
