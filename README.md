@@ -4,7 +4,7 @@ AHWikiEngine is an iOS framework for displaying, parsing, and interacting with M
 It is the product of nearly two years' work on Wikipedia-related projects. Apps using this
 framework have shipped over 1M times.
 
-### You can purchase a license and the full source code [here](http://www.binpress.com/app/ahwikiengine-wiki-framework-for-ios/1160?ad=15353).
+### You can purchase a license and the full source code [here](http://www.avocadohills.com/ahwikiengine/buy).
 Licensing
 ---------
 This demo project contains sample code to demonstrate the power of AHWikiEngine and how it
